@@ -1,175 +1,106 @@
-html {
-  background-color: white;
-}
-
-/* Ensure box-sizing is border-box to include padding and borders in element's total width/height */
 * {
   box-sizing: border-box;
-  font-family: Inter, sans-serif;
-  /* Added fallback font */
 }
 
-/* Ensure full height for body and html */
-html,
-body {
+html, body {
+  background-color: white;
   height: 100%;
   margin: 0;
 }
 
-/* Styling for the section with curved edges */
-.Floating_Island {
-  width: 80%;
-  /* Adjust width based on screen size */
-  max-width: 1000px;
-  /* Limit max width */
+.floating-island {
+  width: 40%;
   height: auto;
-  /* Changed to auto for flexibility */
-  padding: 0;
   background-color: #CED4DA;
   color: white;
-  margin: 5px auto;
+  margin: 0.1% auto;
   border-radius: 20px;
-  /* Curved edges */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Optional shadow */
   text-align: center;
 }
 
-/* Styling for images */
-.link-images img {
-  width: 50px;
+.nav-icon, .nav-up {
+  width: 7.5%;
   height: auto;
-  margin: 15px;
+  margin: auto;
   border-radius: 10px;
 }
 
-/* Styling for head2 section */
-.HELLO_USER {
+.right-nav a, .floating-island a {
+  color: black;
+  text-decoration: none;
+}
+
+.right-nav a:hover, .floating-island a:hover {
+  color: #555;
+}
+
+.hello-user {
   text-align: center;
   background-color: #D4D9C9;
-  height: auto;
-  /* Changed to auto for flexibility */
   padding: 20px;
   color: black;
   word-spacing: 5px;
+  margin: 0 0 3% 0;
 }
 
-.head2 h1 {
-  font-size: 2rem;
-  /* Responsive font size */
-  margin: 10px 0;
+.greetings {
+  padding: 4%;
 }
 
-.head2 p {
-  font-size: 1rem;
-  /* Responsive font size */
-  margin: 5px 0;
-}
-
-/* Container setup to fill remaining space */
 .container {
   display: flex;
-  flex-direction: row;
+  margin: auto;
+  width: 95%; /* Set this to 90% */
+  max-width: 1200px; /* Optional: Set a max width for larger screens */
+  border-radius: 20px; 
+  height: 60%;
   background-color: #DEE2E6;
-  /* Default to horizontal layout */
-  width: 100%;
-  height: calc(100% - 200px);
-  /* Take remaining space below head2 */
-  padding: 5%;
-  margin: 5%;
-  gap: 10px;
-  
-  /* Add rounded corners */
-  border-radius: 20px; /* Adjust the value as needed for more or less curvature */
+  margin-bottom: 5%;
 }
 
-/* Styling for the left section */
 .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
   text-align: center;
-  padding: 10px;
-  flex: 1;
-  /* Use flex property for responsive width */
-  background-color: #6E1423;
+  padding: 5%;
+  flex: 0 0 calc(25% - 2%);
+  background-color: var(--red1);
   border-radius: 20px;
   color: white;
-  /* Combined radius */
+  margin: 2% 0% 2% 2%;
 }
 
-/* Styling for the right section */
 .right {
   background-color: #DEE2E6;
   text-align: center;
   padding: 10px;
-  flex: 3;
-  /* Use flex property for responsive width */
+  flex: 0 0 calc(75% - 2%);
   border-radius: 20px;
-  /* Combined radius */
+  margin: 1.25% 2% 2% 0;
 }
 
 .right-header {
   background-color: #ADB5BD;
-  border-radius: 20px; /* Combined radius */
-  height: 15%; /* Set height to 15% of the parent */
-  margin: 3% 0%; /* Set margin to 3% */
-  width: auto; /* Keep width auto */
+  height: auto; 
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px; 
+  align-content: center;
 }
 
 .right-container {
   background-color: #ADB5BD;
-  border-radius: 20px; /* Combined radius */
-  height: calc(85% - 6%); /* Remaining height after header and margin */
-  margin: 3% 0%; /* Set margin to 3% */
-  width: auto; /* Keep width auto */
+  align-content: center;
+  height: 88%; 
+  border-radius: 20px;
 }
 
-/* Media Query for Tablets (min-width: 481px to max-width: 768px) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .container {
-    flex-direction: row;
-    /* Keep horizontal layout */
-  }
-
-  .Floating_Island {
-    width: 90%;
-    /* 90% width on tablets */
-  }
-
-  .left,
-  .right {
-    width: 100%;
-    /* Full width for both sections on tablets */
-    height: auto;
-  }
-
-  .head2 {
-    height: auto;
-    /* Changed to auto for flexibility */
-    padding: 10px;
-  }
-}
-
-/* Media Query for Laptops (min-width: 769px to max-width: 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    flex-direction: row;
-    /* Keep horizontal layout */
-  }
-
-  .Floating_Island {
-    width: 80%;
-    /* 80% width on laptops */
-  }
-
-  .left,
-  .right {
-    height: auto;
-    /* Keep auto for flexibility */
-  }
-
-  .head2 {
-    height: auto;
-    /* Keep auto for flexibility */
-    padding: 15px
-  }
-
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 5%;
 }
