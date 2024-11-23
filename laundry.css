@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: white;
+    height: 100%;
+    margin: 0;
+}
+
+.floating-island {
+    width: 40%;
+    max-width: 600px;
+    background-color: #CED4DA;
+    color: white;
+    margin: 0.1% auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.nav-icon, .nav-up {
+    width: 7.5%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.hello-user {
+    text-align: center;
+    background-color: #D4D9C9;
+    padding: 20px;
+    color: black;
+    word-spacing: 5px;
+    margin-bottom: 3%;
+}
+
+.greetings {
+    padding: 4%;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 20px; 
+    background-color: #ADB5BD;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container-header {
+    background-color: #6E1423;
+    color: white;
+    width: 96%;
+    margin: 2% auto;
+    border-radius: 20px; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container-nav {
+    display: flex;
+}
+
+.container-nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10%;
+}
+
+.information {
+    display: flex;
+    background-color: #DEE2E6;
+    border-radius: 20px; 
+    margin: 2%;
+    flex: 1;
+    padding-bottom: 5%;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 10px;
+    margin: 4% 2%;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    background-color: black;
+}
+
+.price-chart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price-chart span {
+    margin-right: 10px;
+}
+
+.price-chart span:last-child {
+    margin-right: 0;
+}
+
+.map {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.map-pic {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
