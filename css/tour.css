@@ -1,0 +1,68 @@
+nav {
+  position: fixed;
+  background-color: none;
+  top: 0;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+#banner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 900px;
+
+  z-index: 1;
+
+  background-image: url("/images/tour/Tour.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#banner .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#banner h1 {
+  color: var(--whiteText);
+  font-size: 48px;
+  font-weight: var(--SemiBold);
+  text-align: center;
+}
+
+@media (min-width: 1400px) {
+  #banner h1 {
+    font-size: 64px;
+  }
+}
+
+/* Media Query for Laptops */
+@media (max-width: 1399px) {
+}
+
+/* Media Query for Tablets */
+@media (max-width: 979px) {
+}
+
+/* Media Query for Mobile */
+@media (max-width: 743px) {
+}

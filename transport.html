@@ -16,7 +16,7 @@
     <!-- Start Navigation Bar -->
     <nav>
       <div id="island">
-        <a href="">
+        <a href="transport.html">
           <img src="images/navbar/Commute-dark.svg" class="nav_icon">
         </a>
 
@@ -28,17 +28,57 @@
           <img src="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png" class="nav_up">
         </a>
 
-        <a href="">
+        <a href="tour.html">
           <img src="images/navbar/Laundry-dark.svg" class="nav_icon">
         </a>
 
-        <a href="">
+        <a href="laundry.html">
           <img src="images/navbar/Tour-dark.svg" class="nav_icon">
         </a>
 
       </div>
     </nav>
     <!-- End of Navigation Bar -->
+
+    <!-- Start Navigation Bar Mobile -->
+    <nav id="nav-mobile">
+      <img src="/images/navbar/menu-dark.svg" id="nav-burger" alt="Menu Icon">
+      <div><span class="min">Min</span><span class="is">IS</span><span class="ko">KO</span></div>
+    </nav>
+    <!-- End Navigation Bar Mobile -->
+
+
+
+    <div id="nav-sidebar">
+      <img src="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png" id="nav-up" alt="UP Seal">
+      
+      <div id="mobile-options">
+
+
+        <a href="transport.html" class="mobile-option">
+          <img src="images/navbar/Commute.svg" class="nav-icon" alt="Commute Icon">
+          <h2>Commute</h2>
+        </a>
+
+
+        <a href="ebl.html" class="mobile-option">
+          <img src="images/navbar/EBl.svg" class="nav-icon" alt="Student Icon">
+          <h2>Student</h2>
+        </a>
+
+        <a href="tour.html" class="mobile-option">
+          <img src="images/navbar/Tour.svg" class="nav-icon" alt="Campus Tour Icon">
+          <h2>Campus Tour</h2>
+        </a>
+
+
+        <a href="laundry.html" class="mobile-option">
+          <img src="images/navbar/Laundry.svg" class="nav-icon" alt="Laundry Icon">
+          <h2>Laundry</h2>
+        </a>
+        
+      </div>
+    </div>
 
     <!-- Start of banner -->
     <div id="banner">
@@ -52,7 +92,43 @@
 
     <div id="content">
       <div class="container">
-        
+        <h2>FARE MATRIX</h2>
+
+        <!-- Start of Big Card -->
+        <div id="big-card">
+          
+          <!-- Start of Left Card -->
+          <div id="left-card">
+
+            <h2>Route</h2>
+
+            <div id="tab">
+              <a href="">Jeepney</a>
+              <a href="">Tricycle</a>
+            </div>
+
+            <div id="matrix"></div>
+
+
+          </div>
+          <!-- End of Left Card -->
+
+          <!-- Start of Right Card -->
+          <div id="right-card">
+
+            <h2>Map</h2>
+            <div id="map_container">
+              <div id="map"></div>
+            </div>
+
+
+          </div>
+          <!-- End of Right Card -->
+           
+
+        </div>
+        <!-- End of Big Card -->
+     
       </div>
         
     </div>
@@ -64,5 +140,7 @@
   </div>
 
 </body>
+
+<script src="script/main.js"></script>
 
 </html>

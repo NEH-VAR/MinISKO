@@ -15,11 +15,11 @@
   min-width: 100%;
   height: 30vh;
   min-height: 350px;
+  max-height: 400px;
 
-  z-index: -2;
+  z-index: 1;
 
-  background-image: url('/images/commute/Commute-edited.png');
-
+  background-image: url("/images/commute/Commute-edited.png");
 
   background-size: cover;
   background-position: center;
@@ -43,12 +43,188 @@
   text-align: center;
 }
 
-#content{
+#content {
   display: flex;
   justify-content: center;
   align-items: center;
 
   width: 100%;
+  height: fit-content;
 }
 
-#content
+#content .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+
+  padding: 48px 160px;
+
+  max-width: 1440px;
+}
+
+#content h2 {
+  font-size: 48px;
+}
+
+#big-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+
+  padding: 48px;
+
+  width: fit-content;
+  height: fit-content;
+
+  border-radius: 24px;
+  background-color: var(--grey1);
+
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#left-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 12px;
+
+  width: 100%;
+  height: fit-content;
+
+  border-radius: 12px;
+}
+
+#left-card h2 {
+  text-align: left;
+  width: 100%;
+}
+
+#tab {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 8px 16px;
+  border-radius: 12px;
+
+  background-color: var(--grey2);
+
+  text-align: center;
+}
+
+#tab a {
+  color: var(--black1);
+  font-size: 16px;
+  font-weight: var(--SemiBold);
+}
+
+#matrix {
+  width: 600px;
+  min-height: 300px;
+  height: fit-content;
+
+  border-radius: 12px;
+  background-color: var(--grey2);
+}
+
+#right-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  text-align: left;
+  width: 100%;
+  height: fit-content;
+}
+
+#right-card h2 {
+  width: 100%;
+}
+
+#map {
+  width: 500px;
+  height: 500px;
+
+  border-radius: 12px;
+  background-color: var(--grey2);
+}
+
+/* Media Query for Laptops */
+@media (max-width: 1399px) {
+  #banner h1 {
+    font-size: 42px;
+  }
+
+  #big-card {
+    flex-direction: column;
+    width: 884px;
+    max-width: 884px;
+  }
+
+  #left-card h2 {
+    text-align: center;
+  }
+
+  #tab {
+    gap: 48px;
+
+    width: fit-content;
+    padding: 8px 80px;
+  }
+  #right-card h2 {
+    text-align: center;
+  }
+
+  #matrix {
+    min-width: 720px;
+  }
+}
+
+/* Media Query for Tablets */
+@media (max-width: 979px) {
+  #big-card {
+    width: 680px;
+  }
+
+  #matrix {
+    min-width: 600px;
+  }
+}
+
+/* Media Query for Mobile */
+
+@media (max-width: 743px) {
+  #content h2 {
+    width: 320px;
+
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #big-card {
+    width: 288px;
+  }
+
+  #tab {
+    padding: 8px 16px;
+  }
+
+  #matrix {
+    width: 272px;
+    min-width: 272px;
+  }
+
+  #map {
+    max-width: 272px;
+    max-height: 300px;
+  }
+}

@@ -36,27 +36,10 @@ body::-webkit-scrollbar {
   font-weight: var(--Black);
 }
 
-
-
-
-
-
 #hero .txt span {
   display: inline;
 }
 
-/* Diffrent Color sa MinISKO */
-#hero .txt .min {
-  color: var(--red1);
-}
-
-#hero .txt .is {
-  color: var(--yellow1);
-}
-
-#hero .txt .ko {
-  color: var(--green1);
-}
 
 #hero .txt p {
   font-size: 24px;
