@@ -1,71 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBL Dashboard</title>
+  <head>
+    <title>MinISKO</title>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="ebl.css">
-</head>
+    <link rel="stylesheet" href="css/ebl.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Start Navigation Bar -->
+    <nav>
+      <div id="island">
+        <a href="transport.html">
+          <img src="images/navbar/Commute-dark.svg" class="nav_icon" />
+        </a>
+
+        <a href="ebl.html">
+          <img src="images/navbar/EBl-dark.svg" class="nav_icon" />
+        </a>
+
+        <a href="index.html">
+          <img
+            src="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png"
+            class="nav_up"
+          />
+        </a>
+
+        <a href="tour.html">
+          <img src="images/navbar/Laundry-dark.svg" class="nav_icon" />
+        </a>
+
+        <a href="laundry.html">
+          <img src="images/navbar/Tour-dark.svg" class="nav_icon" />
+        </a>
+      </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!-- Start Navigation Bar Mobile -->
+    <nav id="nav-mobile">
+      <img src="/images/navbar/menu-dark.svg" id="nav-burger" alt="Menu Icon" />
+      <div>
+        <span class="min">Min</span><span class="is">IS</span
+        ><span class="ko">KO</span>
+      </div>
+    </nav>
+    <!-- End Navigation Bar Mobile -->
+
+    <!-- Start of Nav Sidebar -->
+    <div id="nav-sidebar">
+      <img
+        src="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png"
+        id="nav-up"
+        alt="UP Seal"
+      />
+
+      <div id="mobile-options">
+        <a href="transport.html" class="mobile-option">
+          <img
+            src="images/navbar/Commute.svg"
+            class="nav-icon"
+            alt="Commute Icon"
+          />
+          <h2>Commute</h2>
+        </a>
+
+        <a href="ebl.html" class="mobile-option">
+          <img
+            src="images/navbar/EBl.svg"
+            class="nav-icon"
+            alt="Student Icon"
+          />
+          <h2>Student</h2>
+        </a>
+
+        <a href="tour.html" class="mobile-option">
+          <img
+            src="images/navbar/Tour.svg"
+            class="nav-icon"
+            alt="Campus Tour Icon"
+          />
+          <h2>Campus Tour</h2>
+        </a>
+
+        <a href="laundry.html" class="mobile-option">
+          <img
+            src="images/navbar/Laundry.svg"
+            class="nav-icon"
+            alt="Laundry Icon"
+          />
+          <h2>Laundry</h2>
+        </a>
+      </div>
+    </div>
+    <!-- End of Nav Sidebar -->
+
     <div class="hello-user">
-        <nav>
-            <div class="floating-island">
-                <a href="transport.html">
-                    <img src="images/navbar/Commute-dark.svg" class="nav-icon" alt="Commute">
-                </a>
-                <a href="#">
-                    <img src="images/navbar/EBl-dark.svg" class="nav-icon" alt="EBl">
-                </a>
-                <a href="/index.html">
-                    <img src="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png" class="nav-up" alt="UP Seal">
-                </a>
-                <a href="#">
-                    <img src="images/navbar/Laundry-dark.svg" class="nav-icon" alt="Laundry">
-                </a>
-                <a href="#">
-                    <img src="images/navbar/Tour-dark.svg" class="nav-icon" alt="Tour">
-                </a>
-            </div>
-        </nav>
-        <div class="greetings">
-            <p>Month Day, Year</p>
-            <h1>GOOD MORNING, FIRSTNAME</h1>
-            <p>Weekday</p>
-        </div>
+      <div class="greetings">
+        <p>Month Day, Year</p>
+        <h1>GOOD MORNING, FIRSTNAME</h1>
+        <p>Weekday</p>
+      </div>
     </div>
 
     <div class="container">
-        <section class="left">
-            <h1>Keep an Eye on:</h1>
-            <div>
-                <p>Ligtas Points:</p>
-            </div>
-            <div>
-                <p>Number of Offenses:</p>
-            </div>
-            <div>
-                <p>Days until Rent Payment:</p>
-            </div>
-        </section>
+      <section class="left">
+        <h1>Keep an Eye on:</h1>
+        <div>
+          <p>Ligtas Points:</p>
+        </div>
+        <div>
+          <p>Number of Offenses:</p>
+        </div>
+        <div>
+          <p>Days until Rent Payment:</p>
+        </div>
+      </section>
 
-        <section class="right">
-            <div class="right-header">
-                <nav class="right-nav">
-                    <a href="#">Notifications</a>
-                    <a href="#">Announcements</a>
-                    <a href="#">Lobby Slip</a>
-                    <a href="#">Rules & Regulations</a>
-                </nav>
-            </div>
-            <br>
-            <div class="right-container">
-                <p>More information here...</p>
-            </div>
-        </section>
-    </div> <!-- Container -->
-</body>
+      <section class="right">
+        <div class="right-header">
+          <nav class="right-nav">
+            <a href="#">Notifications</a>
+            <a href="#">Announcements</a>
+            <a href="#">Lobby Slip</a>
+            <a href="#">Rules & Regulations</a>
+          </nav>
+        </div>
+        <br />
+        <div class="right-container">
+          <p>More information here...</p>
+        </div>
+      </section>
+    </div>
+    <!-- Container -->
+  </body>
 
+  <script src="script/main.js"></script>
 </html>
