@@ -8,6 +8,8 @@ nav {
   top: 0;
 }
 
+/* Start Banner CSS*/
+
 #banner {
   display: flex;
   justify-content: center;
@@ -17,6 +19,18 @@ nav {
 
   position: relative;
   overflow: hidden;
+
+  /* Fade Out Bottom Effect */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 #banner .container {
@@ -27,8 +41,8 @@ nav {
   width: 100%;
   min-width: 100%;
   height: 100vh;
-  min-height: 100vh;
-  max-height: 900px;
+  min-height: 700px;
+  max-height: 1300px;
 
   z-index: 1;
 
@@ -82,34 +96,141 @@ nav {
   z-index: 3;
 }
 
+/* End Banner CSS */
+
+/* Start Content CSS*/
+
 #content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-color: aqua;
 
-  z-index: ;
+  width: 100%;
+  margin-top: 80px;
 }
 
-.container {
-  height: 300pxs;
-  width: 1120px;
-  background-color: antiquewhite;
+#content .container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  width: 100%;
+  max-width: 1250px;
+
+  height: fit-content;
+
+  padding: 48px 16px;
 }
 
 #sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
   width: 50px;
+  height: fit-content;
+
+  margin-top: 400px;
+  position: sticky;
+  top: 50%;
+
+  transform: translateY(-50%);
+  align-self: flex-start; /* Add this */
+}
+
+#sections img {
+  min-width: 50px;
+  width: 100%;
 }
 
 #info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 50px;
+
+  padding: 48px 16px;
+
+  flex: 25;
+  height: fit-content;
+
+  text-align: center;
+
+  border-radius: 24px;
+  background-color: var(--grey1);
+}
+
+#info-container section {
+  gap: 48px;
+}
+
+#info-container h2 {
+  margin-bottom: 50px;
+
+  font-size: 48px;
+  font-weight: var(--Bold);
+}
+
+#info-container h3 {
+  margin: 16px 0px;
+
+  font-size: 32px;
+  font-weight: var(--SemiBold);
+}
+
+#info-container h4 {
+  font-size: 24px;
+  font-weight: var(--Medium);
+}
+
+#info-container p {
+  font-size: 16px;
+  font-weight: var(--Regular);
+}
+
+.img-placeholder {
+  margin: 16px 0px;
+
+  min-height: 300px;
+  min-width: 500px;
+
+  border-radius: 12px;
+  background-color: var(--grey3);
+}
+
+.building {
   width: 100%;
 }
 
 #identifier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
   width: 50px;
+  margin-top: 400px;
+  height: fit-content;
+
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  align-self: flex-start; /* Add this */
 }
 
+#identifier img {
+  min-width: 50px;
+  width: 100%;
+}
+
+/* End Content CSS */
+
+/* Media Query for Desktop */
 @media (min-width: 1400px) {
   #banner h1 {
     font-size: 64px;
@@ -126,4 +247,74 @@ nav {
 
 /* Media Query for Mobile */
 @media (max-width: 743px) {
+  #banner {
+    height: 100vh;
+  }
+
+  #banner h1 {
+    font-size: 24px;
+    padding: 0px 16px;
+  }
+
+  #content {
+    padding: 0px 16px;
+  }
+
+  #content .container {
+    gap: 0px;
+    border-radius: 24px;
+    background-color: var(--grey1);
+  }
+
+  #sections {
+    width: 24px;
+  }
+
+  #sections img {
+    min-width: 24px;
+    max-width: 24px;
+  }
+
+  #info-container {
+    padding: 32px 8px;
+
+    min-width: 100px;
+  }
+
+  #info-container section {
+    width: 100%;
+    gap: 24px;
+  }
+
+  #info-container h2 {
+    font-size: 24px;
+    word-break:keep-all;
+  }
+
+  #info-container h3{
+    font-size: 20px;
+  }
+
+  #info-container h3{
+    font-size: 16px;
+  }
+
+  #info-container p{
+    font-size: 12px;
+  }
+  .img-placeholder {
+    min-height: 190px;
+
+    width: 100%;
+    min-width: 160px;
+  }
+
+  #identifier {
+    width: 24px;
+  }
+
+  #identifier img {
+    min-width: 24px;
+    max-width: 24px;
+  }
 }
