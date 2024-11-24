@@ -109,12 +109,14 @@
 
     <div class="bottom-container">
       <section class="left">
-        <p style=" font-size: 40px;">EBL Dormer Dashboard</p>
-        <p>This section is exclusively for EBL dormers. Please input the necessary information if you are an authorized user.</p>
-        <p style=" font-size: 25px;">Log In</p>
-        <input type="text" name="EBL ID" placeholder="EBL ID"> <br>
-        <input type="password" name="Passcode" placeholder="Passcode"> <br>
-        <input type="button" class="submit-button" onclick="alert('Loriem Ipsum')" value="Submit"> <br>
+        <div class="ebl-dorm"><p>EBL Dormer Dashboard</p></div>
+        <div class="ebl-exc"><p>This section is exclusively for EBL dormers. Please input the necessary information if you are an authorized user.</p></div>
+        <div class="log-in"><p style=" font-size: 25px;">Log In</p></div>
+        <div>
+        <input class="input-field" type="text" name="EBL ID" placeholder="EBL ID"> <br>
+        <input class="input-field" type="password" name="Passcode" placeholder="Passcode"> <br>
+        <input type="button" class="submit-button" onclick="window.location.href='ebl-notifications.html';" value="Submit"> <br>
+        </div>
       </section>
 
       <section class="right">

@@ -8,16 +8,6 @@
     margin: 0;
   }
   
-  .floating-island {
-    width: 40%;
-    height: auto;
-    background-color: #CED4DA;
-    color: white;
-    margin: 0.1% auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
   
   .nav-icon, .nav-up {
     width: 7.5%;
@@ -76,6 +66,22 @@
     color: white;
     
   }
+
+  .left p{
+    align-items: flex-start;
+    text-align:left;
+  }
+  .input-field {
+    width: 100%; /* Increase the width of the input fields */
+    padding: 10px; /* Add padding for better size */
+    margin: 2%; /* Add margin for spacing between inputs */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners for input fields */
+}
+
+  .ebl-dorm, .ebl-exc, .log-in{
+    text-align: left;
+  }
   
   .right {
     background-color: #DEE2E6;
@@ -86,26 +92,10 @@
     margin: 1.25% 2% 1% 0;
   }
   
-  .right-header {
-    background-color: #ADB5BD;
-    height: auto; 
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 20px; 
-    align-content: center;
-  }
-  
-  .right-container {
-    background-color: #ADB5BD;
-    align-content: center;
-    height: 88%; 
-    border-radius: 20px;
-  }
-
 .submit-button {
     background-color: #ECB555; /* Change this to your desired background color */
     color: black; /* Text color */
-    width: 30%;
+    width: 60%;
     align-content: center;
     border: none; /* Remove default border */
     border-radius: 15px; /* Adjust this value to change the roundness of corners */
