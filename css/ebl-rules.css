@@ -122,7 +122,14 @@
 
 .download-button:hover {
     background-color: #0056b3; /* Darker shade on hover */
+    color: white; /* Keep text color white on hover */
 }
+
+.download-button:active {
+    background-color: #004080; /* Darker shade when pressed */
+    color: white; /* Keep text color white when pressed */
+}
+
   
   /* Media Queries for Tablet Responsiveness */
   @media (max-width: 744px) {
