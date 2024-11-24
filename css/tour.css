@@ -187,9 +187,21 @@ nav {
   font-weight: var(--Medium);
 }
 
-#info-container p {
+.building {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+
+
+  max-width: 900px; 
   font-size: 16px;
   font-weight: var(--Regular);
+}
+
+.building p{
+  padding: 32px 24px;
 }
 
 .img-placeholder {
@@ -197,6 +209,7 @@ nav {
 
   min-height: 300px;
   min-width: 500px;
+  max-width: 800px;
 
   border-radius: 12px;
   background-color: var(--grey3);
@@ -288,20 +301,23 @@ nav {
 
   #info-container h2 {
     font-size: 24px;
-    word-break:keep-all;
+    word-break: keep-all;
   }
 
-  #info-container h3{
+  #info-container h3 {
     font-size: 20px;
   }
 
-  #info-container h3{
+  #info-container h3 {
     font-size: 16px;
   }
 
-  #info-container p{
+  .building p{
     font-size: 12px;
+    padding: 24px 16px;
   }
+
+
   .img-placeholder {
     min-height: 190px;
 

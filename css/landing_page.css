@@ -2,6 +2,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.container {
+  max-width: 1120px;
+}
 
 #hero {
   display: flex;
@@ -15,7 +18,6 @@ body::-webkit-scrollbar {
 #hero .container {
   color: var(--black1);
 }
-
 
 #hero .txt {
   position: relative;
@@ -40,7 +42,6 @@ body::-webkit-scrollbar {
   display: inline;
 }
 
-
 #hero .txt p {
   font-size: 24px;
 }
@@ -60,17 +61,7 @@ body::-webkit-scrollbar {
 
 .hero-img img {
   object-fit: contain;
-
-
 }
-
-
-
-
-
-
-
-
 
 /* Card Section */
 
@@ -86,7 +77,6 @@ body::-webkit-scrollbar {
   padding: 80px 160px;
 
   background-color: var(--whiteBG);
-
 }
 
 #card .container {
@@ -95,7 +85,6 @@ body::-webkit-scrollbar {
 
   justify-content: center;
   align-items: center;
-
 
   width: 100%;
   padding: 40px;
@@ -145,8 +134,6 @@ body::-webkit-scrollbar {
   color: var(--whiteText);
   font-size: 16px;
   font-weight: var(--SemiBold);
-
-
 }
 
 #commute {
@@ -166,17 +153,12 @@ body::-webkit-scrollbar {
 }
 
 #laundry {
-  background-color: #2D234F;
+  background-color: #2d234f;
 }
 
 .icon {
   width: 120px;
 }
-
-
-
-
-
 
 /* Footer */
 
@@ -187,7 +169,6 @@ footer {
 
   justify-content: center;
   align-content: center;
-
 
   width: 100%;
   height: 296px;
@@ -220,7 +201,6 @@ footer {
 .footer_container img {
   width: 160px;
 }
-
 
 .footer_text_container p {
   width: 100%;
@@ -258,17 +238,14 @@ footer {
 
   font-size: 16px;
   font-weight: var(--Regular);
-
 }
 
 .footer_text_2 p:first-child {
   font-weight: var(--SemiBold);
 }
 
-
 /* Laptop */
 @media (max-width: 1399px) {
-
   #hero {
     padding: 0px 48px;
   }
@@ -288,12 +265,10 @@ footer {
   #card .container {
     padding: 40px 24px;
   }
-
 }
 
 /* Tablet */
-@media(max-width: 979px) {
-
+@media (max-width: 979px) {
   #hero {
     padding: 0px 32px;
 
@@ -318,7 +293,7 @@ footer {
 
   .card {
     height: 230px;
-    gap: 8px
+    gap: 8px;
   }
 
   .icon {
@@ -326,22 +301,8 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Mobile */
 @media (max-width: 743px) {
-
   #hero {
     padding: 0px 16px;
     height: 578px;
@@ -370,7 +331,6 @@ footer {
     padding-top: 80px;
 
     text-align: center;
-
   }
 
   #hero .txt h2 {
@@ -378,7 +338,6 @@ footer {
   }
 
   #hero .txt p {
-
     max-width: 400px;
     padding: 8px;
 
@@ -390,8 +349,6 @@ footer {
     min-width: 500px;
     top: 20px;
   }
-
-
 
   #card {
     padding: 80px 16px;
@@ -427,9 +384,6 @@ footer {
     width: 60px;
     height: 60px;
   }
-
-
-
 
   footer {
     height: auto;
