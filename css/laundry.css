@@ -49,6 +49,7 @@
   margin: 2%;
   flex: 1;
   padding-bottom: 5%;
+  flex-direction: row; /* Default to row for larger screens */
 }
 
 .left,
@@ -99,8 +100,8 @@ hr {
   object-fit: cover;
 }
 
-
-@media (max-width: 320px) {
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) { /* Adjust the max-width as needed */
   .information {
     flex-direction: column; /* Stack left and right sections vertically */
   }
