@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 150px;
+}
+
 .main {
   height: fit-content;
 }
@@ -143,6 +147,13 @@ nav {
 #sections img {
   min-width: 50px;
   width: 100%;
+
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#sections img:hover {
+  transform: scale(1.1);
 }
 
 #info-container {
@@ -190,17 +201,16 @@ nav {
 .building {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  text-align: center; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-
-  max-width: 900px; 
+  max-width: 900px;
   font-size: 16px;
   font-weight: var(--Regular);
 }
 
-.building p{
+.building p {
   padding: 32px 24px;
 }
 
@@ -312,11 +322,10 @@ nav {
     font-size: 16px;
   }
 
-  .building p{
+  .building p {
     font-size: 12px;
     padding: 24px 16px;
   }
-
 
   .img-placeholder {
     min-height: 190px;

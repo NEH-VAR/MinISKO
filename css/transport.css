@@ -175,6 +175,11 @@
   padding: 12px 8px;
 
   cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.fare-row:hover {
+  transform: scale(1.01);
 }
 
 #bar {
@@ -210,6 +215,7 @@
 }
 
 #map img {
+  transition: ease-in;
   width: 100%;
 }
 
