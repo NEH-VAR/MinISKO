@@ -98,3 +98,20 @@ hr {
   height: auto;
   object-fit: cover;
 }
+
+
+@media (max-width: 320px) {
+  .information {
+    flex-direction: column; /* Stack left and right sections vertically */
+  }
+
+  .left,
+  .right {
+    margin: 2% 0; /* Adjust margin for spacing between the sections */
+    padding: 5%; /* Optional: adjust padding for mobile */
+  }
+
+  .map-pic {
+    width: 100%; /* Make the map image responsive */
+  }
+}
