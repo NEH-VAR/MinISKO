@@ -146,6 +146,13 @@
   text-align: center;
 }
 
+#JeepType{
+  width: 100%;
+  text-align: center;
+  font-weight: var(--Bold);
+  padding: 16px 8px;
+}
+
 #fare-header {
   display: flex;
   flex-direction: row;

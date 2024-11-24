@@ -110,18 +110,20 @@
 
 .information {
   display: flex;
-  background-color: var(--grey2);
-  border-radius: 20px;
+  flex-direction: row; 
+  gap: 32px;
 
+  padding: 32px;
   width: 100%;
-  flex-direction: row; /* Default to row for larger screens */
+
+  border-radius: 20px;
+  background-color: var(--grey2);
+
 }
 
 .left,
 .right {
-  flex: 1;
-  padding: 10px;
-  margin: 4% 2%;
+  width: 100%;  
 }
 
 .title {
@@ -167,18 +169,24 @@ hr {
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-  /* Adjust the max-width as needed */
+  
+
+  .greetings h1{
+    font-size: 32px;
+  }
+
+  .greetings p{
+    font-size: 12px;
+  }
+
+  #content .wrapper{
+    padding: 32px 16px;
+  }
+
   .information {
-    flex-direction: column; /* Stack left and right sections vertically */
+    padding: 16px;
+    flex-direction: column; 
   }
 
-  .left,
-  .right {
-    margin: 2% 0; /* Adjust margin for spacing between the sections */
-    padding: 5%; /* Optional: adjust padding for mobile */
-  }
-
-  .map-pic {
-    width: 100%; /* Make the map image responsive */
-  }
+  
 }

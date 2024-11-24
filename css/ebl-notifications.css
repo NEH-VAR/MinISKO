@@ -20,6 +20,7 @@ nav {
   background-repeat: no-repeat;
 }
 
+
 .greetings {
   color: var(--whiteText);
   text-align: center;
@@ -108,14 +109,7 @@ nav {
 
 /* Media Queries for Tablet Responsiveness */
 @media (max-width: 744px) {
-  .floating-island {
-    width: 80%; /* Increase width for smaller screens */
-  }
-
-  .nav-icon,
-  .nav-up {
-    width: 6%; /* Decrease icon size for better fit */
-  }
+  
 
   .bottom-container {
     flex-direction: column; /* Stack left and right sections */
