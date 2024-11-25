@@ -125,6 +125,10 @@
   font-weight: var(--SemiBold);
 }
 
+#tab a:hover{
+  font-weight: var(--Bold);
+}
+
 #matrix {
   display: flex;
   flex-direction: column;
@@ -187,6 +191,7 @@
 
 .fare-row:hover {
   transform: scale(1.01);
+  font-weight: var(--Bold);
 }
 
 #bar {
