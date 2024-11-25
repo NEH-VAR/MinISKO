@@ -204,6 +204,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 24px;
 
   max-width: 900px;
   font-size: 16px;
@@ -214,15 +215,75 @@ nav {
   padding: 32px 24px;
 }
 
-.img-placeholder {
-  margin: 16px 0px;
-
-  min-height: 300px;
-  min-width: 500px;
-  max-width: 800px;
+.slider-container {
+  position: relative;
+  width: 400px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  overflow: hidden;
 
   border-radius: 12px;
-  background-color: var(--grey3);
+}
+
+.img-placeholder {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  scroll-snap-type: x mandatory; /* Enable snap */
+  height: 100%; /* Take full height of the container */
+}
+
+.slider-image {
+  width: 400px; /* Fixed width for images */
+  height: auto; /* Height will adjust to maintain aspect ratio */
+  aspect-ratio: 4 / 3; /* Maintain a 3:4 aspect ratio */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  scroll-snap-align: start; /* Snap to the start of each image */
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%; /* Make buttons circular */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.slider-button:hover {
+  background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+}
+
+#prevButton {
+  left: 10px;
+  background-image: url('path/to/left-arrow.png'); /* Add your left arrow image */
+  background-size: 20px; /* Size of the arrow */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px; /* Adjust width */
+  height: 40px; /* Adjust height */
+}
+
+#nextButton {
+  right: 10px;
+  background-image: url('path/to/right-arrow.png'); /* Add your right arrow image */
+  background-size: 20px; /* Size of the arrow */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px; /* Adjust width */
+  height: 40px; /* Adjust height */
+}
+
+#prevButton::before {
+  content: '<'; /* Left arrow */
+  font-size: 24px; /* Adjust size */
+}
+
+#nextButton::after {
+  content: '>'; /* Right arrow */
+  font-size: 24px; /* Adjust size */
 }
 
 .building {

@@ -138,11 +138,7 @@
 }
   
   /* Media Queries for Tablet Responsiveness */
-  @media (max-width: 744px) {
-    .floating-island {
-        width: 80%; /* Increase width for smaller screens */
-    }
-  
+  @media (max-width: 744px) { 
     .nav-icon, .nav-up {
         width: 6%; /* Decrease icon size for better fit */
     }
