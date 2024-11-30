@@ -137,7 +137,42 @@
     background-color: #6C757D; /* Darker shade on hover */
 }
 
-  
+    @media (max-width: 320px) {
+      .right-container {
+        display: flex;
+        background-color: #ADB5BD;
+        flex-direction: column; /* Change to column to align left and right slips vertically */
+        justify-content: space-between; /* Space out the left and right slips */
+        align-items: center; /* Center items horizontally */
+        height: 88%; 
+        border-radius: 20px;
+        padding: 5%; /* Optional: add some padding for aesthetics */
+    }
+    
+    .left-slip, .right-slip {
+        flex: 1; /* Make both slips take equal space */
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+        display: flex; /* Use flexbox for internal alignment */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+    }
+    
+    .left-slip {
+        padding-bottom: 20%;
+    }
+    
+    .right-slip {
+        background-color: #CED4DA;
+        height: 100%; /* Maintain full height */
+        width: auto; /* Allow auto width */
+        border-radius: 20px;
+        align-items: flex-start; 
+        justify-content: flex-start;
+        padding: 5%;
+    }
+    }
+
     /* Media Queries for Tablet Responsiveness */
     @media (max-width: 744px) {
         .nav-icon, .nav-up {
