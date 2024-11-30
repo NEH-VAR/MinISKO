@@ -97,19 +97,6 @@ a {
   display: none;
 }
 
-/* Diffrent Color sa MinISKO */
-.min {
-  color: var(--red1);
-}
-
-.is {
-  color: var(--yellow1);
-}
-
-.ko {
-  color: var(--green1);
-}
-
 li {
   list-style: none;
 }

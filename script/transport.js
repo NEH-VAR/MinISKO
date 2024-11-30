@@ -7,7 +7,7 @@ function showMatrix(type) {
   // Use a timeout to allow the fade-out effect to complete before changing the content
   setTimeout(() => {
     if (type === "jeepney") {
-      matrixDiv.innerHTML = `<h3>Jeepney Fare Matrix</h3>
+      matrixDiv.innerHTML = `<h3>Jeepney</h3>
                 <div id="fare-wrapper">
                     <div id="fare-header">
                         <h4 class="route">Route</h4>
@@ -73,8 +73,13 @@ function showMatrix(type) {
 
                     </div>
                 </div>`;
+
+                //Apply Jeepney base Map
+              const mapImage = document.getElementById("map-image");
+              mapImage.src = "images/commute/jeepney/base.png";
+
     } else if (type === "tricycle") {
-      matrixDiv.innerHTML = `<h3>Tricycle Fare Matrix</h3>
+      matrixDiv.innerHTML = `<h3>Tricycle</h3>
               <div id="fare-wrapper">
                   <div id="fare-header">
                       <h4 class="route">Route</h4>
@@ -132,11 +137,14 @@ function showMatrix(type) {
                       </div>
                   </div>
               </div>`;
+
+              //Apply Tricycle base Map
+              const mapImage = document.getElementById("map-image");
+              mapImage.src = "images/commute/Routes/base.png";
     }
 
-    // Add the visible class to trigger the fade-in effect
-    matrixDiv.classList.add("visible");
-  }, 500); // Match this timeout with the CSS transition duration
+    
+  }, 0); // Match this timeout with the CSS transition duration
 }
 
 // Set default to Jeepney on page load

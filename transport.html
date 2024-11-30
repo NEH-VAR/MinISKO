@@ -6,6 +6,7 @@
 
   <link href="css/main.css" rel="stylesheet" type="text/css" />
   <link href="css/transport.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -13,93 +14,8 @@
   <!-- Start of Main -->
   <div class="main">
 
-    <!-- Start Navigation Bar -->
-    <nav>
-      <div id="island">
-        <a href="transport.html">
-          <img src="images/navbar/Commute-dark.svg" class="nav_icon" />
-        </a>
-
-        <a href="ebl-pre-login.html">
-          <img src="images/navbar/student-dark.svg" class="nav_icon" />
-        </a>
-
-        <a href="index.html">
-          <img
-            src="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png"
-            class="nav_up"
-          />
-        </a>
-
-        <a href="tour.html">
-          <img src="images/navbar/Tour-dark.svg" class="nav_icon" />
-        </a>
-
-        <a href="laundry.html">
-          <img src="images/navbar/Laundry-dark.svg" class="nav_icon" />
-        </a>
-
-      </div>
-    </nav>
-    <!-- End of Navigation Bar -->
-
-    <!-- Start Navigation Bar Mobile -->
-    <nav id="nav-mobile">
-      <img src="/images/navbar/menu-dark.svg" id="nav-burger" alt="Menu Icon" />
-      <div>
-        <span class="min">Min</span><span class="is">IS</span
-        ><span class="ko">KO</span>
-      </div>
-    </nav>
-    <!-- End Navigation Bar Mobile -->
-
-    <!-- Start of Nav Sidebar -->
-    <div id="nav-sidebar">
-      <img
-        src="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png"
-        id="nav-up"
-        alt="UP Seal"
-      />
-
-      <div id="mobile-options">
-        <a href="transport.html" class="mobile-option">
-          <img
-            src="images/navbar/Commute.svg"
-            class="nav-icon"
-            alt="Commute Icon"
-          />
-          <h2>Commute</h2>
-        </a>
-
-        <a href="ebl-pre-login.html" class="mobile-option">
-          <img
-            src="images/navbar/student.svg"
-            class="nav-icon"
-            alt="Student Icon"
-          />
-          <h2>Student</h2>
-        </a>
-
-        <a href="tour.html" class="mobile-option">
-          <img
-            src="images/navbar/Tour.svg"
-            class="nav-icon"
-            alt="Campus Tour Icon"
-          />
-          <h2>Campus Tour</h2>
-        </a>
-
-        <a href="laundry.html" class="mobile-option">
-          <img
-            src="images/navbar/Laundry.svg"
-            class="nav-icon"
-            alt="Laundry Icon"
-          />
-          <h2>Laundry</h2>
-        </a>
-      </div>
-    </div>
-    <!-- End of Nav Sidebar -->
+    <!-- NavBar from Main.js -->
+    <div id="navbar-container"></div>
 
     <!-- Start of banner -->
     <div id="banner">
@@ -124,6 +40,8 @@
             <h2>Route</h2>
 
             <div id="tab">
+
+              <!-- Prevent Default is used to prevent it from scrolling to the top -->
               <a href="#" id="jeepney-tab" onclick="event.preventDefault();showMatrix('jeepney')">Jeepney</a>
               <a href="#" id="tricycle-tab" onclick="event.preventDefault(); showMatrix('tricycle')">Tricycle</a>
             </div>
@@ -131,10 +49,14 @@
             <!-- Start of Matrix -->
             <div id="matrix">
               
-              
+              <!-- Transport.js wil assign the content -->
 
             </div>
             <!-- End of Matrix -->
+
+            <div>
+              Note: Applicable Vice Versa
+            </div>
 
           </div>
           <!-- End of Left Card -->
@@ -145,7 +67,10 @@
             <h2>Map</h2>
             <div id="map_container">
               <div id="map">
-                <img src="images/commute/jeepney/base.png" alt="Map" id="map-image">
+
+                <!-- Transport.js wil assign the source -->
+                <img src=""  id="map-image">
+
               </div>
             </div>
 
@@ -171,5 +96,6 @@
 
 <script src="script/main.js"></script>
 <script src="script/transport.js"></script>
+
 
 </html>

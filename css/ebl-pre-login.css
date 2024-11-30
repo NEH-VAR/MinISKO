@@ -8,12 +8,6 @@
     margin: 0;
   }
   
-  .nav-icon, .nav-up {
-    width: 7.5%;
-    height: auto;
-    margin: auto;
-    border-radius: 10px;
-  }
   
   .right-nav a, .floating-island a {
     color: black;
@@ -27,7 +21,6 @@
   .top-container {
     text-align: center;
     background-color: #D4D9C9;
-    padding: 20px;
     color: black;
     word-spacing: 5px;
     margin: 0 0 3% 0;
