@@ -60,11 +60,19 @@
     text-align: center;
     padding: 5%;
     padding-bottom: 10%;
-    flex: 0 0 calc(40% - 2%);
+    flex: 0 0 calc(45% - 2%);
     background-color: var(--red1);
     border-radius: 20px 0 0 20px;
     color: white;
-    
+  }
+
+  .right {
+    background-color: var(--grey1);
+    text-align: center;
+    padding: 10px;
+    flex: 0 0 calc(55% - 2%);
+    border-radius: 20px;
+    margin: 1.25% 2% 1% 0;
   }
 
   .left p{
@@ -83,6 +91,12 @@
     text-align: left;
   }
   
+  .ebl-dorm{
+    font-size: 30px;
+  }
+  .ebl-exc{
+    font-size: 15px;
+  }
   .right {
     background-color: #DEE2E6;
     text-align: center;
@@ -123,10 +137,12 @@
     .left {
         flex: 1; /* Take full width on smaller screens */
         height: auto;
-        width: 96%;
+        width: 100%;
         margin: auto; /* Adjust margins */
         margin-top: 2%;
-        margin-bottom: 2%;
+        margin-bottom: 0%;
+        border-radius: 20px 20px 0 0;
+
     }
   
     .right {
@@ -154,17 +170,4 @@
     }
   }
   
-  @media (max-width: 1440px) {
-    .container {
-      display: flex;
-      margin: auto;
-      width: 95%; /* Set this to 90% */
-      max-width: 1200px; /* Optional: Set a max width for larger screens */
-      border-radius: 20px; 
-      height: 60%;
-      background-color: #DEE2E6;
-      margin-bottom: 5%;
-    }
-  
-  }
   

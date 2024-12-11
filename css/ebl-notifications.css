@@ -8,44 +8,6 @@
   background-color: #ADB5BD; /* Ensure the background color is applied */
 }
 
-/* Media Queries for Phone Responsiveness */
-@media (max-width: 320px){
-  .bottom-container{
-    display: flex;               /* Enable Flexbox */
-    flex-direction: column;      /* Stack children vertically */
-    align-items: center;         /* Center children horizontally (optional) */
-    justify-content: flex-start; /* Align children at the start vertically */
-  }
-  .left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 24px;
-  
-    padding: 50px 32px;
-  
-    width: 350px;
-  
-    text-align: center;
-  
-    background-color: var(--red1);
-    border-radius: 20px;
-    color: white;
-  }
-
-  .right {
-  width: 100%;
-  min-height: 300px;
-}
-
- .right-container{
-  width: 100%;
-  height: 100%;
-  min-height: 250px;
- }
-
-}
 
 /* Media Queries for Tablet Responsiveness */
 @media (max-width: 744px) 
@@ -60,6 +22,16 @@
     align-items: center;    /* Aligns children horizontally (optional) */
     justify-content: center; /* Centers children vertically (optional) */
     height: 100%;
+    padding: 0%;
+  }
+
+  .left{
+    margin: 5%;
+    width: 100%;
+  }
+
+  .right{
+    width: 100%;
   }
 
   .ligtas,
@@ -70,37 +42,5 @@
     justify-content: space-between; /* Space between items */
     align-items: center; /* Center items vertically */
     margin: 10px 0; /* Add some margin for spacing */
-  }
-}
-
-@media (max-width: 980px){
-  .nav-icon,
-  .nav-up {
-    width: 6%; /* Decrease icon size for better fit */
-  }
-  
-
-  .ligtas,
-  .offense,
-  .rent {
-    display: flex; /* Use flexbox */
-    flex-direction: row; /* Align items in a row */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
-    margin: 10px 0; /* Add some margin for spacing */
-  }
-}
-
-
-@media (max-width: 1440px) {
-  .container {
-    display: flex;
-    margin: auto;
-    width: 95%; /* Set this to 90% */
-    max-width: 1200px; /* Optional: Set a max width for larger screens */
-    border-radius: 20px;
-    height: 60%;
-    background-color: #dee2e6;
-    margin-bottom: 5%;
   }
 }
