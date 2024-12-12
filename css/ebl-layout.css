@@ -90,3 +90,48 @@ html, body {
   padding: 1%;
   gap: 5%;
 }
+
+
+  /* Media Queries for Tablet Responsiveness */
+  @media (max-width: 744px) {
+    .nav-icon, .nav-up {
+        width: 6%; /* Decrease icon size for better fit */
+    }
+  
+    .bottom-container {
+        flex-direction: column; /* Stack left and right sections */
+        height: 70%; /* Increase height of the container */
+    }
+  
+    .left {
+        flex: 1; /* Take full width on smaller screens */
+        height: auto;
+        width: 96%;
+        margin: auto; /* Adjust margins */
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+  
+    .right {
+        flex: 1 0 100%; /* Take full width on smaller screens */
+        margin: 2% 0; /* Adjust margins */
+    }
+  
+    .right-nav {
+        flex-direction: row; /* Align navigation items horizontally */
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; /* Center items horizontally */
+        gap: 10px; /* Optional: Add some space between items */
+    }
+    .right-container {
+        height: 87%; /* Increase height of the right container */
+    }
+  
+    .ligtas, .offense, .rent {
+      display: flex; /* Use flexbox */
+      flex-direction: row; /* Align items in a row */
+      justify-content: space-between; /* Space between items */
+      align-items: center; /* Center items vertically */
+      margin: 10px 0; /* Add some margin for spacing */
+    }
+  }
