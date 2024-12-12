@@ -83,17 +83,3 @@
     }
   }
   
-  @media (max-width: 1440px) {
-    .container {
-      display: flex;
-      margin: auto;
-      width: 95%; /* Set this to 90% */
-      max-width: 1200px; /* Optional: Set a max width for larger screens */
-      border-radius: 20px; 
-      height: 60%;
-      background-color: #DEE2E6;
-      margin-bottom: 5%;
-    }
-  
-  }
-  
