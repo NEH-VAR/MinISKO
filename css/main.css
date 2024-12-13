@@ -108,6 +108,10 @@ li {
   }
 
   #nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+
     display: flex;
     justify-content: left;
     align-items: center;
