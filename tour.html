@@ -1,658 +1,879 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>MinISKO</title>
 
-<head>
-  <title>MinISKO</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png"
+    />
 
-  <link rel="icon" type="image/x-icon" href="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/tour.css" rel="stylesheet" type="text/css" />
+    <link href="css/imageslider.css" rel="stylesheet" type="text/css" />
+  </head>
 
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
-  <link href="css/tour.css" rel="stylesheet" type="text/css" />
-  <link href="css/imageslider.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <!-- Start of Main -->
+    <div class="main">
+      <!-- NavBar from Main.js -->
+      <div id="navbar-container"></div>
 
-<body>
-
-  <!-- Start of Main -->
-  <div class="main">
-
-    <!-- NavBar from Main.js -->
-    <div id="navbar-container"></div>
-
-    <!-- Start of banner -->
-    <div id="banner">
-      <div class="container">
-        <div class="overlay">
-          <h1>Discover the Beauty of Our Campus, Online.</h1>
+      <!-- Start of banner -->
+      <div id="banner">
+        <div class="container">
+          <div class="overlay">
+            <h1>Discover the Beauty of Our Campus, Online.</h1>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- End of Banner -->
+      <!-- End of Banner -->
 
-    <div class="map">
-      <h2>Map</h2>
-      <img src="images/tour/tour-map.svg">
-    </div>
+      <div class="map">
+        <h2>Map</h2>
+        <img src="images/tour/tour-map.svg" />
+      </div>
 
-    <!-- Start of Content -->
-    <div id="content">
-  
-      
+      <!-- Start of Content -->
+      <div id="content">
+        <div class="container">
+          <div id="sections">
+            <a href="#acad"><img src="images/tour/Acad-dark.svg" /></a>
+            <a href="#activity"><img src="images/tour/Extra-dark.svg" /></a>
+            <a href="#dorm"><img src="images/tour/Home-dark.svg" /></a>
+            <a href="#sport"><img src="images/tour/Sports-dark.svg" /></a>
+          </div>
 
-      <div class="container">
+          <div id="info-container">
+            <section id="acad">
+              <h2>ACADEMICS</h2>
 
-        <div id="sections">
-          <a href="#acad"><img src="images/tour/Acad-dark.svg"></a>
-          <a href="#activity"><img src="images/tour/Extra-dark.svg"></a>
-          <a href="#dorm"><img src="images/tour/Home-dark.svg"></a>
-          <a href="#sport"><img src="images/tour/Sports-dark.svg"></a>
-        </div>
-    
-        <div id="info-container">
-          <section id="acad">
+              <div class="building" id="acad-1">
+                <div class="building-content">
+                  <h3>ADMIN Building</h3>
+                  <h4>ADMIN Wing</h4>
+                  <p>
+                    The Admin Wing, located on the left side of the
+                    Administration Building, accommodates the majority of
+                    faculty and technical staff. This includes essential offices
+                    such as the Office of Student Affairs (OSA), the Registrar's
+                    Office, and the Director's Office, among others.
+                  </p>
 
-            <h2>ACADEMICS</h2>
-
-            <div class="building" id="acad-1">
-              <div class="building-content">
-                <h3>ADMIN Building</h3>
-                <h4>ADMIN Wing</h4>
-                <p>The Admin Wing, located on the left side of the Administration Building, accommodates the majority of faculty and technical staff. This includes essential offices such as the Office of Student Affairs (OSA), the Registrar's Office, and the Director's Office, among others.</p>
-                
-                
-                <!-- Start Image Slider -->
-                <div class="slider">
-                  <div class="list">
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/1.jpg" alt="Slide 1" />
+                  <!-- Start Image Slider -->
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/3.jpg"
+                          alt="Slide 3"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/4.jpg"
+                          alt="Slide 4"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/5.jpg"
+                          alt="Slide 5"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/6.jpg"
+                          alt="Slide 6"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/7.jpg"
+                          alt="Slide 7"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/8.jpg"
+                          alt="Slide 8"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/9.jpg"
+                          alt="Slide 9"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Admin/10.jpg"
+                          alt="Slide 10"
+                        />
+                      </div>
                     </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/2.jpg" alt="Slide 2" />
+                    <div class="buttons">
+                      <button>&lt;</button>
+                      <button>&gt;</button>
                     </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/3.jpg" alt="Slide 3" />
-                    </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/4.jpg" alt="Slide 4" />
-                    </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/5.jpg" alt="Slide 5" />
-                    </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/6.jpg" alt="Slide 6" />
-                    </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/7.jpg" alt="Slide 7" />
-                    </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/8.jpg" alt="Slide 8" />
-                    </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/9.jpg" alt="Slide 9" />
-                    </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/Admin/10.jpg" alt="Slide 10" />
-                    </div>
+                    <ul class="dots">
+                      <li class="active"></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                  <!-- End Image Slider -->
                 </div>
-                <div class="buttons">
-                    <button>&lt;</button>
-                    <button>&gt;</button>
-                </div>
-                <ul class="dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                </div>
-                <!-- End Image Slider -->
-              </div>
-          
-              <div class="building-content">
-                <h4>CHSS Wing</h4>
 
-                <p>The CHSS Wing, situated on the right side of the Administration Building, houses important administrative offices, including the Dean's office, the Registrar's office, and the Office of Anti-Sexual Harassment (OASH). This wing also features classrooms for various programs, such as Bachelor of Arts in Communication and Media Arts (BACMA), Bachelor of Arts in Education (BAE), and Architecture (ARCHI), supporting a diverse range of academic disciplines.</p>
-              
-                <div class="slider">
-                  <div class="list">
-                    <div class="item">
+                <div class="building-content">
+                  <h4>CHSS Wing</h4>
+
+                  <p>
+                    The CHSS Wing, situated on the right side of the
+                    Administration Building, houses important administrative
+                    offices, including the Dean's office, the Registrar's
+                    office, and the Office of Anti-Sexual Harassment (OASH).
+                    This wing also features classrooms for various programs,
+                    such as Bachelor of Arts in Communication and Media Arts
+                    (BACMA), Bachelor of Arts in Education (BAE), and
+                    Architecture (ARCHI), supporting a diverse range of academic
+                    disciplines.
+                  </p>
+
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
                         <img src="/images/tour/Tour/CHSS/1.jpg" alt="Slide 1" />
-                    </div>
-                    <div class="item">
+                      </div>
+                      <div class="item">
                         <img src="/images/tour/Tour/CHSS/2.jpg" alt="Slide 2" />
-                    </div>
-                    <div class="item">
+                      </div>
+                      <div class="item">
                         <img src="/images/tour/Tour/CHSS/3.jpg" alt="Slide 3" />
-                    </div>
-                    <div class="item">
+                      </div>
+                      <div class="item">
                         <img src="/images/tour/Tour/CHSS/4.jpg" alt="Slide 4" />
-                    </div>
-                    <div class="item">
+                      </div>
+                      <div class="item">
                         <img src="/images/tour/Tour/CHSS/5.jpg" alt="Slide 5" />
-                    </div>
-                    <div class="item">
+                      </div>
+                      <div class="item">
                         <img src="/images/tour/Tour/CHSS/6.jpg" alt="Slide 6" />
-                    </div>
-                    <div class="item">
+                      </div>
+                      <div class="item">
                         <img src="/images/tour/Tour/CHSS/7.jpg" alt="Slide 7" />
-                    </div>
-                    <div class="item">
+                      </div>
+                      <div class="item">
                         <img src="/images/tour/Tour/CHSS/8.jpg" alt="Slide 8" />
+                      </div>
                     </div>
-                </div>
-                <div class="buttons">
-                    <button>&lt;</button>
-                    <button>&gt;</button>
-                </div>
-                <ul class="dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-              </div>
-            
-              </div>
-            </div>
-
-            <div class="building" id="acad-2">
-              <div class="building-content">
-                <h3>College of Science and Mathematics</h3>
-                <p>The CSM Building, located at a distance from the main campus, primarily houses classrooms for programs in Computer Science, Biology, Applied Mathematics, and Food Technology. It is equipped with a variety of laboratories dedicated to computer science, agriculture, biology, and agriculture, providing students with hands-on learning experiences in their respective fields.</p>
-                
-                <div class="slider">
-                  <div class="list">
-                    <div class="item">
-                        <img src="/images/tour/Tour/CSM/csm-1.jpg" alt="Slide 1" />
-                    </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/CSM/csm-2.jpg" alt="Slide 2" />
-                    </div>
-                    <div class="item">
-                        <img src="/images/tour/Tour/CSM/csm-3.jpg" alt="Slide 3" />
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button>&lt;</button>
-                    <button>&gt;</button>
-                </div>
-                <ul class="dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-              </div>
-
-              </div>
-            </div>
-            
-          </section>
-
-
-          <section id="activity">
-
-            <h2>Student Activity Center</h2>
-
-            <div class="building" id="activity-1" >
-
-              <div class="building-content">
-                <h3>Cultural Center</h3>
-                <p>WLA PANI The library, situated adjacent to the Administration and EBL dormitory, offers a diverse collection of books and access to Macintosh computers. Additionally, patrons can enjoy complimentary Wi-Fi services throughout the facility.</p>
-                <div class="slider">
-                  <div class="list">
-                      <div class="item">
-                          <img src="/images/tour/Tour/Cultural/cultural-1.jpg" alt="Slide 1" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Cultural/cultural-2.jpg" alt="Slide 2" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Cultural/cultural-3.jpg" alt="Slide 3" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Cultural/cultural-4.jpg" alt="Slide 4" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Cultural/cultural-5.jpg" alt="Slide 5" />
-                      </div>
-                  </div>
-                  <div class="buttons">
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
                       <li></li>
                       <li></li>
                       <li></li>
-                  </ul>
-              </div>
-              </div>
-
-              
-            </div>
-
-            <div class="building" id="activity-2" >
-
-              <div class="building-content">
-                <h3>Library</h3>
-                <p>The library, situated adjacent to the Administration and EBL dormitory, offers a diverse collection of books and access to Macintosh computers. Additionally, patrons can enjoy complimentary Wi-Fi services throughout the facility.</p>
-                <div class="slider">
-                  <div class="list">
-                      <div class="item">
-                          <img src="/images/tour/Tour/Library/library-1.jpg" alt="Slide 1" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Library/library-2.jpg" alt="Slide 2" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Library/library-3.jpg" alt="Slide 3" />
-                      </div>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
                   </div>
-                  <div class="buttons">
+                </div>
+              </div>
+
+              <div class="building" id="acad-2">
+                <div class="building-content">
+                  <h3>College of Science and Mathematics</h3>
+                  <p>
+                    The CSM Building, located at a distance from the main
+                    campus, primarily houses classrooms for programs in Computer
+                    Science, Biology, Applied Mathematics, and Food Technology.
+                    It is equipped with a variety of laboratories dedicated to
+                    computer science, agriculture, biology, and agriculture,
+                    providing students with hands-on learning experiences in
+                    their respective fields.
+                  </p>
+
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/CSM/csm-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/CSM/csm-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/CSM/csm-3.jpg"
+                          alt="Slide 3"
+                        />
+                      </div>
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
                       <li></li>
-                  </ul>
-              </div>
-              </div>
-
-
-            </div>
-
-            <div class="building" id="activity-3" >
-
-              <div class="building-content">
-                <h3>Oblation Plaza</h3>
-                <p>The Oblation Plaza features the Oblation statue or 'Oble', a symbol of selfless dedication to the nation. This remarkable work is crafted by National Artist Guillermo Tolentino and serves as a poignant representation of the spirit of service and sacrifice for the country.</p>
-                <div class="slider">
-                  <div class="list">
-                      <div class="item">
-                          <img src="/images/tour/Tour/Oblation/obli-1.jpg" alt="Slide 1" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Oblation/obli-2.jpg" alt="Slide 2" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Oblation/obli-3.jpg" alt="Slide 3" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Oblation/obli-4.jpg" alt="Slide 4" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Oblation/obli-5.jpg" alt="Slide 5" />
-                      </div>
+                    </ul>
                   </div>
-                  <div class="buttons">
+                </div>
+              </div>
+            </section>
+
+            <section id="activity">
+              <h2>Student Activity Center</h2>
+
+              <div class="building" id="activity-1">
+                <div class="building-content">
+                  <h3>Cultural Center</h3>
+                  <p>
+                    WLA PANI The library, situated adjacent to the
+                    Administration and EBL dormitory, offers a diverse
+                    collection of books and access to Macintosh computers.
+                    Additionally, patrons can enjoy complimentary Wi-Fi services
+                    throughout the facility.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Cultural/cultural-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Cultural/cultural-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Cultural/cultural-3.jpg"
+                          alt="Slide 3"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Cultural/cultural-4.jpg"
+                          alt="Slide 4"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Cultural/cultural-5.jpg"
+                          alt="Slide 5"
+                        />
+                      </div>
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
                       <li></li>
                       <li></li>
                       <li></li>
-                  </ul>
+                    </ul>
+                  </div>
+                </div>
               </div>
+
+              <div class="building" id="activity-2">
+                <div class="building-content">
+                  <h3>Library</h3>
+                  <p>
+                    The library, situated adjacent to the Administration and EBL
+                    dormitory, offers a diverse collection of books and access
+                    to Macintosh computers. Additionally, patrons can enjoy
+                    complimentary Wi-Fi services throughout the facility.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Library/library-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Library/library-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Library/library-3.jpg"
+                          alt="Slide 3"
+                        />
+                      </div>
+                    </div>
+                    <div class="buttons">
+                      <button>&lt;</button>
+                      <button>&gt;</button>
+                    </div>
+                    <ul class="dots">
+                      <li class="active"></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
+              <div class="building" id="activity-3">
+                <div class="building-content">
+                  <h3>Oblation Plaza</h3>
+                  <p>
+                    The Oblation Plaza features the Oblation statue or 'Oble', a
+                    symbol of selfless dedication to the nation. This remarkable
+                    work is crafted by National Artist Guillermo Tolentino and
+                    serves as a poignant representation of the spirit of service
+                    and sacrifice for the country.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Oblation/obli-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Oblation/obli-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Oblation/obli-3.jpg"
+                          alt="Slide 3"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Oblation/obli-4.jpg"
+                          alt="Slide 4"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Oblation/obli-5.jpg"
+                          alt="Slide 5"
+                        />
+                      </div>
+                    </div>
+                    <div class="buttons">
+                      <button>&lt;</button>
+                      <button>&gt;</button>
+                    </div>
+                    <ul class="dots">
+                      <li class="active"></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-            </div>
-
-            <div class="building" id="activity-4" >
+              <div class="building" id="activity-4">
                 <div class="building-content">
                   <h3>Kalimudan Covered Court</h3>
-                  <p>The covered court, located adjacent to the Kalimudan canteen, serves as a versatile space for recreational activities. This facility is often used for various sports, events, and gatherings, providing students and faculty with an area to engage in physical activities and social interactions in a sheltered environment.</p>
+                  <p>
+                    The covered court, located adjacent to the Kalimudan
+                    canteen, serves as a versatile space for recreational
+                    activities. This facility is often used for various sports,
+                    events, and gatherings, providing students and faculty with
+                    an area to engage in physical activities and social
+                    interactions in a sheltered environment.
+                  </p>
                   <div class="slider">
                     <div class="list">
-                        <div class="item">
-                            <img src="/images/tour/Tour/Kalimudan/court-1.jpg" alt="Slide 1" />
-                        </div>
-                        <div class="item">
-                            <img src="/images/tour/Tour/Kalimudan/court-2.jpg" alt="Slide 2" />
-                        </div>
-                        <div class="item">
-                            <img src="/images/tour/Tour/Kalimudan/court-3.jpg" alt="Slide 3" />
-                        </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Kalimudan/court-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Kalimudan/court-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Kalimudan/court-3.jpg"
+                          alt="Slide 3"
+                        />
+                      </div>
                     </div>
                     <div class="buttons">
-                        <button>&lt;</button>
-                        <button>&gt;</button>
+                      <button>&lt;</button>
+                      <button>&gt;</button>
                     </div>
                     <ul class="dots">
-                        <li class="active"></li>
-                        <li></li>
-                        <li></li>
+                      <li class="active"></li>
+                      <li></li>
+                      <li></li>
                     </ul>
                   </div>
                 </div>
-            </div>
+              </div>
+            </section>
 
-          </section>
+            <section id="dorm">
+              <h2>Dormitories</h2>
 
-
-          <section id="dorm">
-
-            <h2>Dormitories</h2>
-
-            <div class="building" id="dorm-1" >
-
-              <div class="building-content">
-                <h3>Elias B. Lopez Hall</h3>
-                <p>The Elias B. Lopez Hall, commonly known as the EBL Dormitory, is a housing facility designed for UP students seeking affordable accommodation near campus. While it offers cost-effective living arrangements, residents are expected to adhere to strict rules and regulations to maintain a conducive living environment. The dormitory aims to foster a sense of community among students while providing essential amenities for their academic and personal needs.</p>
-                <div class="slider">
-                  <div class="list">
+              <div class="building" id="dorm-1">
+                <div class="building-content">
+                  <h3>Elias B. Lopez Hall</h3>
+                  <p>
+                    The Elias B. Lopez Hall, commonly known as the EBL
+                    Dormitory, is a housing facility designed for UP students
+                    seeking affordable accommodation near campus. While it
+                    offers cost-effective living arrangements, residents are
+                    expected to adhere to strict rules and regulations to
+                    maintain a conducive living environment. The dormitory aims
+                    to foster a sense of community among students while
+                    providing essential amenities for their academic and
+                    personal needs.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
                       <div class="item">
-                          <img src="/images/tour/Tour/EBL/ebl-1.jpg" alt="Slide 1" />
+                        <img
+                          src="/images/tour/Tour/EBL/ebl-1.jpg"
+                          alt="Slide 1"
+                        />
                       </div>
                       <div class="item">
-                          <img src="/images/tour/Tour/EBL/ebl-2.jpg" alt="Slide 2" />
+                        <img
+                          src="/images/tour/Tour/EBL/ebl-2.jpg"
+                          alt="Slide 2"
+                        />
                       </div>
                       <div class="item">
-                          <img src="/images/tour/Tour/EBL/ebl-3.jpg" alt="Slide 3" />
+                        <img
+                          src="/images/tour/Tour/EBL/ebl-3.jpg"
+                          alt="Slide 3"
+                        />
                       </div>
-                  </div>
-                  <div class="buttons">
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
                       <li></li>
-                  </ul>
-              </div>                
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              
-            </div>
-
-            <div class="building" id="dorm-2">
-
-              <div class="building-content">
-                <h3>CSM Annex</h3>
-                <p>The CSM Dormitory is specifically designed to accommodate students who are in the process of completing their thesis or conducting research. This dormitory provides a supportive environment for graduate students, offering essential amenities and resources that facilitate their academic work. With a focus on creating a conducive atmosphere for study and collaboration, the CSM Dormitory helps students manage their time effectively as they work towards their academic goals.</p>
-                <div class="slider">
-                  <div class="list">
+              <div class="building" id="dorm-2">
+                <div class="building-content">
+                  <h3>CSM Annex</h3>
+                  <p>
+                    The CSM Dormitory is specifically designed to accommodate
+                    students who are in the process of completing their thesis
+                    or conducting research. This dormitory provides a supportive
+                    environment for graduate students, offering essential
+                    amenities and resources that facilitate their academic work.
+                    With a focus on creating a conducive atmosphere for study
+                    and collaboration, the CSM Dormitory helps students manage
+                    their time effectively as they work towards their academic
+                    goals.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
                       <div class="item">
-                          <img src="/images/tour/Tour/CSM Annex/annex.jpg" alt="Slide 1" />
+                        <img
+                          src="/images/tour/Tour/CSM Annex/annex.jpg"
+                          alt="Slide 1"
+                        />
                       </div>
-                  </div>
-                  <div class="buttons">
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
-                  </ul>
-              </div>                
-              </div>
-
-              
-            </div>
-
-          </section>
-
-
-          <section id="sport">
-            <h2>Sport Facilities</h2>
-
-            <div class="building" id="sport-1">
-
-              <div class="building-content">
-
-                <h3>Sports Complex</h3>
-
-                <h4>Training Facility</h4>
-                <p>The Training Facility is an indoor gym designed to enhance the performance and skills of athletes. It is equipped with a wide range of state-of-the-art equipment, including weightlifting machines, cardiovascular machines, resistance training tools, and functional training gear. This facility aims to provide athletes with the resources they need to improve their strength, endurance, agility, and overall athletic performance. Additionally, the Training Facility may offer specialized training programs, coaching, and support to help athletes reach their full potential.</p>
-                <div class="slider">
-                  <div class="list">
-                      <div class="item">
-                          <img src="/images/tour/Tour/Training/training-1.jpg" alt="Slide 1" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Training/training-2.jpg" alt="Slide 2" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Training/training-3.jpg" alt="Slide 3" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Training/training-4.jpg" alt="Slide 4" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Training/training-5.jpg" alt="Slide 5" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Training/training-6.jpg" alt="Slide 6" />
-                      </div>
+                    </ul>
                   </div>
-                  <div class="buttons">
+                </div>
+              </div>
+            </section>
+
+            <section id="sport">
+              <h2>Sport Facilities</h2>
+
+              <div class="building" id="sport-1">
+                <div class="building-content">
+                  <h3>Sports Complex</h3>
+
+                  <h4>Training Facility</h4>
+                  <p>
+                    The Training Facility is an indoor gym designed to enhance
+                    the performance and skills of athletes. It is equipped with
+                    a wide range of state-of-the-art equipment, including
+                    weightlifting machines, cardiovascular machines, resistance
+                    training tools, and functional training gear. This facility
+                    aims to provide athletes with the resources they need to
+                    improve their strength, endurance, agility, and overall
+                    athletic performance. Additionally, the Training Facility
+                    may offer specialized training programs, coaching, and
+                    support to help athletes reach their full potential.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Training/training-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Training/training-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Training/training-3.jpg"
+                          alt="Slide 3"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Training/training-4.jpg"
+                          alt="Slide 4"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Training/training-5.jpg"
+                          alt="Slide 5"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Training/training-6.jpg"
+                          alt="Slide 6"
+                        />
+                      </div>
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
                       <li></li>
                       <li></li>
                       <li></li>
                       <li></li>
-                  </ul>
-              </div>
-
-                <h4>Indoor Gym</h4>
-                <p>The Training Facility is an indoor gym designed to enhance the performance and skills of athletes. It is equipped with a wide range of state-of-the-art equipment, including weightlifting machines, cardiovascular machines, resistance training tools, and functional training gear. This facility aims to provide athletes with the resources they need to improve their strength, endurance, agility, and overall athletic performance. Additionally, the Training Facility may offer specialized training programs, coaching, and support to help athletes reach their full potential.</p>
-                <div class="slider">
-                  <div class="list">
-                      <div class="item">
-                          <img src="/images/tour/Tour/Indoor/indoor-1.jpg" alt="Slide 1" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Indoor/indoor-2.jpg" alt="Slide 2" />
-                      </div>
+                    </ul>
                   </div>
-                  <div class="buttons">
+
+                  <h4>Indoor Gym</h4>
+                  <p>
+                    The Training Facility is an indoor gym designed to enhance
+                    the performance and skills of athletes. It is equipped with
+                    a wide range of state-of-the-art equipment, including
+                    weightlifting machines, cardiovascular machines, resistance
+                    training tools, and functional training gear. This facility
+                    aims to provide athletes with the resources they need to
+                    improve their strength, endurance, agility, and overall
+                    athletic performance. Additionally, the Training Facility
+                    may offer specialized training programs, coaching, and
+                    support to help athletes reach their full potential.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Indoor/indoor-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Indoor/indoor-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
-                  </ul>
-              </div>
-
-
-                <h4>Open Field</h4>
-                <p>An open field used for archery and potentially other sports can be referred to as an "archery range" or "archery field." If the space is versatile and accommodates multiple sports, it may be called a "multi-sport field" or "sports field."</p>
-                <div class="slider">
-                  <div class="list">
-                      <div class="item">
-                          <img src="/images/tour/Tour/Field/field-1.jpg" alt="Slide 1" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Field/field-2.jpg" alt="Slide 2" />
-                      </div>
+                    </ul>
                   </div>
-                  <div class="buttons">
+
+                  <h4>Open Field</h4>
+                  <p>
+                    An open field used for archery and potentially other sports
+                    can be referred to as an "archery range" or "archery field."
+                    If the space is versatile and accommodates multiple sports,
+                    it may be called a "multi-sport field" or "sports field."
+                  </p>
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Field/field-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Field/field-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
-                  </ul>
-              </div>
-  
-                <h4>Stadium</h4>
-                <p>The newly built stadium in Davao, designed to host national events and complement the existing JMC Stadium near Davao Airport, can be referred to as a "state-of-the-art sports stadium" or "multi-purpose stadium." This designation emphasizes its modern facilities and capability to accommodate a variety of sporting events, concerts, and large gatherings. </p>
-                <div class="slider">
-                  <div class="list">
-                      <div class="item">
-                          <img src="/images/tour/Tour/Field/field-1.jpg" alt="Slide 1" />
-                      </div>
-                      <div class="item">
-                          <img src="/images/tour/Tour/Field/field-2.jpg" alt="Slide 2" />
-                      </div>
+                    </ul>
                   </div>
-                  <div class="buttons">
+
+                  <h4>Stadium</h4>
+                  <p>
+                    The newly built stadium in Davao, designed to host national
+                    events and complement the existing JMC Stadium near Davao
+                    Airport, can be referred to as a "state-of-the-art sports
+                    stadium" or "multi-purpose stadium." This designation
+                    emphasizes its modern facilities and capability to
+                    accommodate a variety of sporting events, concerts, and
+                    large gatherings.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Field/field-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Field/field-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
-                  </ul>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              </div>
-              
-
-            </div>
-
-            <div class="building" id="sport-2">
-
-              <div class="building-content">
+              <div class="building" id="sport-2">
+                <div class="building-content">
                   <h3>Basketball Court</h3>
-                  <p style="text-align: center;">Open Basketball Court beside the Admin Building.</p>
+                  <p style="text-align: center">
+                    Open Basketball Court beside the Admin Building.
+                  </p>
                   <div class="slider">
                     <div class="list">
-                        <div class="item">
-                            <img src="/images/tour/Tour/Basketball/basketball-1.jpg" alt="Slide 1" />
-                        </div>
-                        <div class="item">
-                            <img src="/images/tour/Tour/Basketball/basketball-2.jpg" alt="Slide 2" />
-                        </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Basketball/basketball-1.jpg"
+                          alt="Slide 1"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="/images/tour/Tour/Basketball/basketball-2.jpg"
+                          alt="Slide 2"
+                        />
+                      </div>
                     </div>
                     <div class="buttons">
-                        <button>&lt;</button>
-                        <button>&gt;</button>
+                      <button>&lt;</button>
+                      <button>&gt;</button>
                     </div>
                     <ul class="dots">
-                        <li class="active"></li>
-                        <li></li>
+                      <li class="active"></li>
+                      <li></li>
                     </ul>
+                  </div>
                 </div>
               </div>
 
-            </div>  
-            
-            <div class="building" id="sport-3">
-              <div class="building-content">
-                <h3>Football Field</h3>
-                <p style="text-align: center;">Foodtball Field in Between Admin and Kalimudan.</p>
-                <div class="slider">
-                  <div class="list">
+              <div class="building" id="sport-3">
+                <div class="building-content">
+                  <h3>Football Field</h3>
+                  <p style="text-align: center">
+                    Foodtball Field in Between Admin and Kalimudan.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
                       <div class="item">
-                          <img src="/images/tour/Tour/Football/football.jpg" alt="Slide 1" />
+                        <img
+                          src="/images/tour/Tour/Football/football.jpg"
+                          alt="Slide 1"
+                        />
                       </div>
-                  </div>
-                  <div class="buttons">
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <div class="building" id="sport-4">
-              <div class="building-content">
-                <h3>Outdoor Gym</h3>
-                <p>The outdoor gym located outside the library can be described as a "community fitness park" or "open-air gym." This space features a variety of fun and engaging gym equipment designed for people of all ages and fitness levels.</p>
-                <div class="slider">
-                  <div class="list">
+
+              <div class="building" id="sport-4">
+                <div class="building-content">
+                  <h3>Outdoor Gym</h3>
+                  <p>
+                    The outdoor gym located outside the library can be described
+                    as a "community fitness park" or "open-air gym." This space
+                    features a variety of fun and engaging gym equipment
+                    designed for people of all ages and fitness levels.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
                       <div class="item">
-                          <img src="/images/tour/Tour/Outdoor/outdoor-1.jpg" alt="Slide 1" />
+                        <img
+                          src="/images/tour/Tour/Outdoor/outdoor-1.jpg"
+                          alt="Slide 1"
+                        />
                       </div>
                       <div class="item">
-                          <img src="/images/tour/Tour/Outdoor/outdoor-2.jpg" alt="Slide 2" />
+                        <img
+                          src="/images/tour/Tour/Outdoor/outdoor-2.jpg"
+                          alt="Slide 2"
+                        />
                       </div>
                       <div class="item">
-                          <img src="/images/tour/Tour/Outdoor/outdoor-3.jpg" alt="Slide 3" />
+                        <img
+                          src="/images/tour/Tour/Outdoor/outdoor-3.jpg"
+                          alt="Slide 3"
+                        />
                       </div>
-                  </div>
-                  <div class="buttons">
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
                       <li></li>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="building" id="sport-5">
-
-              <div class="building-content">
-                <h3>Volleyball Court</h3>
-                <p>The Volleyball Court is an open court found beside the Basketball Court.</p>
-                <div class="slider">
-                  <div class="list">
+              <div class="building" id="sport-5">
+                <div class="building-content">
+                  <h3>Volleyball Court</h3>
+                  <p>
+                    The Volleyball Court is an open court found beside the
+                    Basketball Court.
+                  </p>
+                  <div class="slider">
+                    <div class="list">
                       <div class="item">
-                          <img src="/images/tour/Tour/Volleyball/volleyball-1.jpg" alt="Slide 1" />
+                        <img
+                          src="/images/tour/Tour/Volleyball/volleyball-1.jpg"
+                          alt="Slide 1"
+                        />
                       </div>
                       <div class="item">
-                          <img src="/images/tour/Tour/Volleyball/volleyball-2.jpg" alt="Slide 2" />
+                        <img
+                          src="/images/tour/Tour/Volleyball/volleyball-2.jpg"
+                          alt="Slide 2"
+                        />
                       </div>
-                  </div>
-                  <div class="buttons">
+                    </div>
+                    <div class="buttons">
                       <button>&lt;</button>
                       <button>&gt;</button>
-                  </div>
-                  <ul class="dots">
+                    </div>
+                    <ul class="dots">
                       <li class="active"></li>
                       <li></li>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-          </section>
+            </section>
+          </div>
 
+          <div id="identifier"></div>
         </div>
-    
-        <div id="identifier">
-
-        </div>
-
       </div>
-      
+      <!-- End of Content -->
     </div>
-    <!-- End of Content -->
+    <!-- End of Main -->
+  </body>
 
-  </div>
-  <!-- End of Main -->
-
-
-  </div>
-
-</body>
-
-
-<script src="script/main.js"></script>
-<script src="script/image.js"></script>
-<script src="script/identifier.js"></script>
-
-
+  <script src="script/main.js"></script>
+  <script src="script/image.js"></script>
+  <script src="script/identifier.js"></script>
 </html>

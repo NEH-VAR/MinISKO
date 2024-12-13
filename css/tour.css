@@ -102,6 +102,10 @@ nav {
 
 /* End Banner CSS */
 
+#sections {
+  z-index: 12;
+}
+
 /* Start Content CSS*/
 
 #content {
@@ -149,7 +153,7 @@ nav {
 
   padding: 48px 16px;
 }
-#sport .slider{
+#sport .slider {
   margin-bottom: 50px;
 }
 
@@ -278,12 +282,19 @@ nav {
   position: sticky;
   top: 50%;
   transform: translateY(-50%);
-  align-self: flex-start; /* Add this */
+  align-self: flex-start; 
+
+  
 }
 
 #identifier img {
   min-width: 50px;
   width: 100%;
+  transition: transform 0.3s ease;
+}
+
+#identifier img:hover {
+  transform: scale(1.2);
 }
 
 /* End Content CSS */
@@ -323,7 +334,7 @@ nav {
     padding: 0px 16px;
   }
 
-  .map{
+  .map {
     padding: 0px 16px;
   }
 
@@ -338,7 +349,6 @@ nav {
     gap: 0px;
   }
 
-  
   #sections,
   #identifier {
     display: none;
