@@ -43,9 +43,7 @@ html, body {
   width: 90%; 
   height: 60%;
   border-radius: 20px; 
-  height: 60%;
   background-color: var(--grey1);
-  width: 100%;
   max-width: 1200px;
   min-height: 400px;
 }
@@ -56,8 +54,8 @@ html, body {
   flex-direction: column;
   justify-content: space-between;
   height: 90%;
-  text-align: center;
-  padding: 5%;
+  text-align: left;
+  padding: 3%;
   flex: 0 0 calc(25% - 2%);
   background-color: var(--red1);
   border-radius: 20px;
@@ -72,6 +70,7 @@ html, body {
   flex: 0 0 calc(75% - 2%);
   border-radius: 20px;
   margin: 1.25% 2% 1% 0;
+  height: 88.5%;
 }
 
 .right-header {
@@ -90,10 +89,13 @@ html, body {
   padding: 1%;
   gap: 5%;
 }
-
-
+@media (max-width: 1000px) {
+  .right-container{
+    height: 100%;
+  }
+}
   /* Media Queries for Tablet Responsiveness */
-  @media (max-width: 744px) {
+  @media (max-width: 790px) {
     .nav-icon, .nav-up {
         width: 6%; /* Decrease icon size for better fit */
     }
@@ -110,11 +112,14 @@ html, body {
         margin: auto; /* Adjust margins */
         margin-top: 2%;
         margin-bottom: 2%;
+        
     }
   
     .right {
         flex: 1 0 100%; /* Take full width on smaller screens */
         margin: 2% 0; /* Adjust margins */
+        padding-bottom: 5%;
+        height: 100%;
     }
   
     .right-nav {
@@ -124,7 +129,7 @@ html, body {
         gap: 10px; /* Optional: Add some space between items */
     }
     .right-container {
-        height: 87%; /* Increase height of the right container */
+        height: auto; /* Increase height of the right container */
     }
   
     .ligtas, .offense, .rent {
@@ -135,3 +140,31 @@ html, body {
       margin: 10px 0; /* Add some margin for spacing */
     }
   }
+
+/* Mobile screen - when width is 768px or below */
+@media (max-width: 320px) {
+  .right-nav a {
+    display: inline-block;
+    width: 40px;  /* Adjust size of image */
+    height: 40px; /* Adjust size of image */
+    text-indent: -9999px; /* Hide text */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .right-nav a:nth-child(1) {
+    background-image: url('https://w7.pngwing.com/pngs/848/336/png-transparent-circle-area-point-angle-white-gray-circle-angle-other-white-thumbnail.png');
+  }
+
+  .right-nav a:nth-child(2) {
+    background-image: url('https://w7.pngwing.com/pngs/848/336/png-transparent-circle-area-point-angle-white-gray-circle-angle-other-white-thumbnail.png');
+  }
+
+  .right-nav a:nth-child(3) {
+    background-image: url('https://w7.pngwing.com/pngs/848/336/png-transparent-circle-area-point-angle-white-gray-circle-angle-other-white-thumbnail.png');
+  }
+
+  .right-nav a:nth-child(4) {
+    background-image: url('https://w7.pngwing.com/pngs/848/336/png-transparent-circle-area-point-angle-white-gray-circle-angle-other-white-thumbnail.png');
+  }
+}

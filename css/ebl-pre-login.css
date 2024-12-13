@@ -97,14 +97,7 @@
   .ebl-exc{
     font-size: 15px;
   }
-  .right {
-    background-color: #DEE2E6;
-    text-align: center;
-    padding: 10px;
-    flex: 0 0 calc(60% - 2%);
-    border-radius: 20px;
-    margin: 1.25% 2% 1% 0;
-  }
+
   
 .submit-button {
     background-color: #ECB555; /* Change this to your desired background color */
@@ -123,3 +116,170 @@
     background-color: #ECB555; /* Darker shade on hover */
 }
   
+.prelogin-announcements {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-between; /* Distribute items with spacing */
+  margin: auto;
+  width: 97.5%; 
+  height: auto; /* Allow height to adjust based on children */
+  border-radius: 20px; 
+  background-color: var(--grey1); 
+  text-align: center;
+  padding: 5%; /* Optional: add padding inside container */
+}
+
+.prelogin-announcements p{
+  font-size: 30px;
+}
+
+.announcements {
+  display: flex;
+  margin: auto;
+  width: 90%; 
+  height: 100%;
+  border-radius: 20px; 
+  background-color: var(--grey3);
+  max-width: 1200px;
+  min-height: 400px;
+  margin: 5%;
+  padding: 2.5%; /* Add padding to announcements */
+}
+
+.a-left {
+  display: flex;
+  margin: 0%;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: calc(100% - 5%); /* Occupy 100% width minus the padding of announcements */
+  min-height: 350px;
+  text-align: left;
+  background-color: #9F9191;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding-right: 2.5%; /* To ensure the background color extends until the 2.5% padding */
+}
+
+.a-right {
+  background-color: var(--grey3);
+  text-align: center;
+  padding: 5%;
+  flex: 0 0 calc(45% - 2%); /* Occupy remaining width of 45% */
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-right: 2%;
+  height: 88.5%;
+  width: auto;
+}
+
+
+.a-right p{
+  text-align: left;
+  font-size: 20px;
+}
+
+.buttons {
+  margin-top: 85%;
+  padding: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 2px solid black; /* Add a black border */
+  border-radius: 10px; /* Makes the corners curved */
+  background-color: white; /* Optional: Transparent background */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.buttons:hover {
+  background-color: black; /* Optional: Background changes on hover */
+  color: white; /* Optional: Text color changes on hover */
+}
+
+
+@media (max-width: 790px){
+  .a-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    width: auto;
+    min-height: 350px;
+    text-align: left;
+    flex: 0 0 calc(55% - 2%);
+    background-color: #9F9191;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+  .prelogin-announcements{
+    margin-top: 50%;
+  }
+  .announcements {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    margin: 5%;
+    width: 90%; 
+    height: 60%;
+    border-radius: 20px; 
+    background-color: var(--grey3);
+    max-width: 1200px;
+    min-height: 400px;
+  }
+  
+  .a-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    width: auto;
+    min-height: 350px;
+    text-align: left;
+    flex: 0 0 100%; /* Takes up the full width of the parent */
+    background-color: #9F9191;
+    margin: 2.5%;
+  }
+  
+  .a-right {
+    background-color: var(--grey3);
+    text-align: center;
+    padding: 5%;
+    flex: 0 0 100%; /* Takes up the full width of the parent */
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-right: 2%;
+    height: 88.5%;
+    width: auto;
+  }
+
+  
+  .bottom-container {
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column for vertical alignment */
+    height: 100%; /* Ensure the container takes full height */
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    flex: 0 0 calc(45% - 2%); /* Keep width adjusted for vertical layout */
+    background-color: var(--red1);
+    border-radius: 20px 20px 0 0;
+    color: white;
+    margin-bottom: 2%; /* Optional: Add space between left and right */
+  }
+  
+  .right {
+    background-color: var(--grey1);
+    text-align: center;
+    flex: 0 0 calc(55% - 2%); /* Adjust height and width for vertical layout */
+    border-radius: 20px;
+  }
+  
+}
