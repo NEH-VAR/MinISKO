@@ -166,10 +166,9 @@ nav {
   justify-content: flex-start;
   align-items: center;
 
-  gap: 50px;
-
+  gap: 80px;
+  
   padding: 48px 16px;
-
   width: 100%;
   height: fit-content;
 
@@ -180,18 +179,18 @@ nav {
 }
 
 #info-container section {
-  gap: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 #info-container h2 {
-  margin-bottom: 50px;
-
   font-size: 48px;
   font-weight: var(--Bold);
 }
 
 #info-container h3 {
-  margin: 16px 0px;
+  margin-bottom: 24px;
 
   font-size: 32px;
   font-weight: var(--SemiBold);
@@ -207,26 +206,37 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  gap: 24px;
-
+  
+  gap: 40px;
+  width: 100%;
   max-width: 900px;
+
+  text-align: center;
   font-size: 16px;
   font-weight: var(--Regular);
 }
 
 .building p {
-  padding: 32px 24px;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 16px 24px;
+  text-align: justify;
+  hyphens: auto;
+  word-wrap: break-word;
 }
 
-.building {
-  width: 100%;
-}
+
 
 /* image slider */
-.slider{
+.slider {
   width: 600px;
   aspect-ratio: 4/ 3;
+}
+
+.slider .item {
+  width: 600px;
 }
 
 #identifier {
@@ -271,11 +281,10 @@ nav {
     width: 100%;
   }
 
-  .slider{
+  .slider {
     width: 500px;
     height: 375px;
   }
-
 }
 
 /* Media Query for Mobile */
@@ -300,16 +309,11 @@ nav {
     gap: 0px;
   }
 
-  #sections {
-    width: 24px;
+  #sections,
+  #identifier {
+    display: none;
   }
 
-  #sections img {
-    min-width: 24px;
-    max-width: 24px;
-  }
-
-  
   #info-container {
     padding: 32px 8px;
 
@@ -330,29 +334,13 @@ nav {
     font-size: 24px;
   }
 
-  .building p {
-    font-size: 12px;
-    padding: 24px 16px;
-  }
-
-  .slider{
-    width: 100%;
+  .slider {
+    width: 240px;
+    aspect-ratio: 4/ 3;
     height: 100%;
-    aspect-ratio: 4/3;
-    min-height: 180px;
-  }
-  
-  .slider .list img {
-    width: 100%;
-    object-fit: cover;
   }
 
-  #identifier {
-    width: 24px;
-  }
-
-  #identifier img {
-    min-width: 24px;
-    max-width: 24px;
+  .slider .item {
+    width: 240px;
   }
 }

@@ -209,6 +209,10 @@ main .wrapper {
   aspect-ratio: 4/ 3;
 }
 
+.slider .item{
+  width: 500px;
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   
@@ -255,5 +259,14 @@ main .wrapper {
   .chart-container{
     overflow-x: auto;
     max-width: 100%;
+  }
+  
+  .slider{
+    width: 240px;
+    aspect-ratio: 4/ 3;
+  }
+  
+  .slider .item{
+    width: 240px;
   }
 }
