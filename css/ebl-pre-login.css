@@ -148,19 +148,14 @@
 }
 
 .a-left {
-  display: flex;
-  margin: 0%;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: calc(100% - 5%); /* Occupy 100% width minus the padding of announcements */
-  min-height: 350px;
-  text-align: left;
   background-color: #9F9191;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-  padding-right: 2.5%; /* To ensure the background color extends until the 2.5% padding */
+  margin: auto;
+  flex: 1; /* Make both top and bottom sections take equal space */
+  display: flex; /* Optional: use flexbox for internal alignment */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
 }
+
 
 .a-right {
   background-color: var(--grey3);
@@ -197,15 +192,23 @@
   color: white; /* Optional: Text color changes on hover */
 }
 
+@media (max-width: 350px){
+  .announcements{
+    height: 200px;
+  }
 
-@media (max-width: 790px){
+  .a-left{
+    min-height: 200px;
+  }
+}
+@media (max-width: 1000px){
   .a-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 90%;
     width: auto;
-    min-height: 350px;
+    min-height: 250px;
     text-align: left;
     flex: 0 0 calc(55% - 2%);
     background-color: #9F9191;
@@ -213,9 +216,7 @@
     margin-top: 2.5%;
     margin-bottom: 2.5%;
   }
-  .prelogin-announcements{
-    margin-top: 50%;
-  }
+  
   .announcements {
     display: flex;
     flex-direction: column; /* Stack children vertically */
@@ -232,13 +233,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90%;
-    width: auto;
-    min-height: 350px;
     text-align: left;
-    flex: 0 0 100%; /* Takes up the full width of the parent */
     background-color: #9F9191;
     margin: 2.5%;
+    width: 95%; /* Takes up the full width of the parent */
+    height: 0; /* Height will be controlled by the aspect ratio */
+    min-height: 300px;
+    position: relative;
   }
   
   .a-right {
@@ -261,11 +262,6 @@
   }
   
   .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center;
     height: 100%;
     width: 100%;
     flex: 0 0 calc(45% - 2%); /* Keep width adjusted for vertical layout */
@@ -282,4 +278,10 @@
     border-radius: 20px;
   }
   
+}
+
+@media (max-width: 1500px){
+  .a-left{
+    min-height: 500px;
+  }
 }
