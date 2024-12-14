@@ -104,3 +104,20 @@ navBurger.addEventListener("click", () => {
 navSidebar.addEventListener("click", () => {
   navSidebar.classList.remove("active");
 });
+
+const footHTML= `<div class="footer_container">
+        <img src="images/icon.ico">
+        <div class="footer_text_container">
+          <div class="footer_text_1">
+            <p id="footer_text_1_1">BSCS 1ST YEAR 2024</p>
+            <p id="footer_text_1_2">CMSC 3 FINAL PROJECT</p>
+          </div>
+          <div class="footer_text_2">
+            <p>Created by:</p>
+            <p>Ravhen M. Grageda<br>Jayrad P. Adeva</p>
+          </div>
+        </div>
+      </div>`;
+
+const footContainer = document.getElementById("foot-container");
+footContainer.innerHTML = footHTML; 
