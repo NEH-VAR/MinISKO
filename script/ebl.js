@@ -47,8 +47,6 @@ function updateGreeting() {
   // Update the content every minute (or less often if desired)
   setInterval(updateGreeting, 60000); // 60000 milliseconds = 1 minute
 
-
-  // script.js
 document.addEventListener('DOMContentLoaded', () => {
     const allLinks = document.querySelectorAll('#right-header a');
     const mobileLinks = document.querySelectorAll('.mobile-links a');
@@ -57,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadContent(href) {
         switch (href) {
-            case "#notifications":
+            case "#not":
                 content.innerHTML = `
                 <div id="notification">
 
@@ -86,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 </div>`;
                 break;
-            case "#lobby":
+            case "#lob":
                 content.innerHTML = `<div id="lobby">
                     <section class="left-slip">
                         <h1>Lobby Slip Request</h1>
@@ -100,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </section>
                 </div>`;
                 break;
-            case "#rules":
+            case "#rul":
                 content.innerHTML = `<div id="rules">
                     <h1>Rules and Regulations</h1>
                     <p>To ensure a safe, comfortable, and harmonious living environment for all residents, please familiarize yourself with the following rules and regulations. These guidelines are designed to promote respect, cleanliness, and a sense of community. By adhering to these rules, we can create a positive and productive living space for everyone.</p>
@@ -134,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Initial load and active state
-    const currentHash = window.location.hash || "#notifications"; // Use hash or default
+    const currentHash = window.location.hash || "#not"; // Use hash or default
     loadContent(currentHash);
     setActive(allLinks, currentHash);
 

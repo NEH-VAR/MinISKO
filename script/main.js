@@ -13,7 +13,7 @@ const navbarHTML = `
 
         <a href="index.html">
           <img
-            src="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png"
+            src="images/icon.ico"
             class="nav_up"
           />
         </a>
@@ -43,7 +43,7 @@ const navbarHTML = `
     <!-- Start of Nav Sidebar -->
     <div id="nav-sidebar">
       <img
-        src="https://up.edu.ph/wp-content/uploads/2020/01/UP-Seal.png"
+        src="images/icon.ico"
         id="nav-up"
         alt="UP Seal"
       />

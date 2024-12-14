@@ -6,12 +6,6 @@ html {
   height: fit-content;
 }
 
-nav {
-  position: fixed;
-  background-color: none;
-  top: 0;
-}
-
 /* Start Banner CSS*/
 
 #banner {
