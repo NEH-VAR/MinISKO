@@ -128,22 +128,22 @@ function updateContent(target) {
               <div id="second-tour-slider" class="slider">
                 <div class="list">
                   <div class="item">
-                    <img src="/images/laundry/big/big-1.jpg" alt="Slide 1" />
+                    <img src="images/laundry/big/big-1.jpg" alt="Slide 1" />
                   </div>
                   <div class="item">
-                    <img src="/images/laundry/big/big-2.jpg" alt="Slide 2" />
+                    <img src="images/laundry/big/big-2.jpg" alt="Slide 2" />
                   </div>
                   <div class="item">
-                    <img src="/images/laundry/big/big-3.jpg" alt="Slide 3" />
+                    <img src="images/laundry/big/big-3.jpg" alt="Slide 3" />
                   </div>
                   <div class="item">
-                    <img src="/images/laundry/big/big-4.jpg" alt="Slide 4" />
+                    <img src="images/laundry/big/big-4.jpg" alt="Slide 4" />
                   </div>
                   <div class="item">
-                    <img src="/images/laundry/big/big-5.jpg" alt="Slide 5" />
+                    <img src="images/laundry/big/big-5.jpg" alt="Slide 5" />
                   </div>
                   <div class="item">
-                    <img src="/images/laundry/big/big-6.jpg" alt="Slide 6" />
+                    <img src="images/laundry/big/big-6.jpg" alt="Slide 6" />
                   </div>
 
                 </div>
@@ -373,19 +373,19 @@ function updateContent(target) {
               <div class="slider">
                 <div class="list">
                   <div class="item">
-                    <img src="/images/laundry/pen/pen-1.jpg" alt="Slide 1" />
+                    <img src="images/laundry/pen/pen-1.jpg" alt="Slide 1" />
                 </div>
                 <div class="item">
-                    <img src="/images/laundry/pen/pen-2.jpg" alt="Slide 2" />
+                    <img src="images/laundry/pen/pen-2.jpg" alt="Slide 2" />
                 </div>
                 <div class="item">
-                    <img src="/images/laundry/pen/pen-3.jpg" alt="Slide 3" />
+                    <img src="images/laundry/pen/pen-3.jpg" alt="Slide 3" />
                 </div>
                 <div class="item">
-                    <img src="/images/laundry/pen/pen-4.jpg" alt="Slide 4" />
+                    <img src="images/laundry/pen/pen-4.jpg" alt="Slide 4" />
                 </div>
                 <div class="item">
-                    <img src="/images/laundry/pen/pen-5.jpg" alt="Slide 5" />
+                    <img src="images/laundry/pen/pen-5.jpg" alt="Slide 5" />
                 </div>
 
                 </div>
@@ -571,13 +571,13 @@ function updateContent(target) {
               <div class="slider">
                 <div class="list">
                   <div class="item">
-                    <img src="/images/laundry/vab/vab-1.jpg" alt="Slide 1" />
+                    <img src="images/laundry/vab/vab-1.jpg" alt="Slide 1" />
                 </div>
                 <div class="item">
-                    <img src="/images/laundry/vab/vab-2.jpg" alt="Slide 2" />
+                    <img src="images/laundry/vab/vab-2.jpg" alt="Slide 2" />
                 </div>
                 <div class="item">
-                    <img src="/images/laundry/vab/vab-3.jpg" alt="Slide 3" />
+                    <img src="images/laundry/vab/vab-3.jpg" alt="Slide 3" />
                 </div>
 
                 </div>
