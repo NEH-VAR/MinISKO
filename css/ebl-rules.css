@@ -7,28 +7,7 @@
     padding: 10%;
   }
 
-  .download-button {
-    display: inline-block; /* Make it behave like a button */
-    background-color: #6E1423; /* Button background color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding for size */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline */
-    border-radius: 20px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
-}
 
-.download-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    color: white; /* Keep text color white on hover */
-}
-
-.download-button:active {
-    background-color: #004080; /* Darker shade when pressed */
-    color: white; /* Keep text color white when pressed */
-}
 
   
 

@@ -7,7 +7,7 @@ const navbarHTML = `
           <img src="images/navbar/Commute-dark.svg" class="nav_icon" />
         </a>
 
-        <a href="ebl-pre-login.html">
+        <a href="ebl.html">
           <img src="images/navbar/student-dark.svg" class="nav_icon" />
         </a>
 
@@ -58,7 +58,7 @@ const navbarHTML = `
           <h2>Commute</h2>
         </a>
 
-        <a href="ebl-pre-login.html" class="mobile-option">
+        <a href="ebl.html" class="mobile-option">
           <img
             src="images/navbar/student.svg"
             class="nav-icon"
