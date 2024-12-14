@@ -44,7 +44,7 @@ html {
 
   z-index: 1;
 
-  background-image: url("/images/tour/Tour.png");
+  background-image: url("images/tour/Tour.png");
 
   background-size: cover;
   background-position: center;
