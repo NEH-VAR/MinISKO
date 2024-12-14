@@ -4,7 +4,6 @@ body {
   justify-content: center;
 
   width: 100%;
-
 }
 
 .top-container {
@@ -39,6 +38,8 @@ body {
 
   width: 100%;
   max-width: 1200px;
+
+  padding-bottom: 64px;
 }
 
 #log-in-dashboard {
