@@ -3,12 +3,12 @@ const navbarHTML = `
   <!-- Start Navigation Bar -->
     <nav>
       <div id="island">
-        <a href="transport.html">
-          <img src="images/navbar/Commute-dark.svg" class="nav_icon" />
+        <a href="tour.html">
+          <img src="images/navbar/Tour-dark.svg" class="nav_icon" />
         </a>
 
-        <a href="ebl.html">
-          <img src="images/navbar/student-dark.svg" class="nav_icon" />
+        <a href="transport.html">
+          <img src="images/navbar/Commute-dark.svg" class="nav_icon" />
         </a>
 
         <a href="index.html">
@@ -18,8 +18,8 @@ const navbarHTML = `
           />
         </a>
 
-        <a href="tour.html">
-          <img src="images/navbar/Tour-dark.svg" class="nav_icon" />
+        <a href="ebl.html">
+          <img src="images/navbar/student-dark.svg" class="nav_icon" />
         </a>
 
         <a href="laundry.html">
@@ -49,6 +49,15 @@ const navbarHTML = `
       />
 
       <div id="mobile-options">
+        <a href="tour.html" class="mobile-option">
+          <img
+            src="images/navbar/Tour.svg"
+            class="nav-icon"
+            alt="Campus Tour Icon"
+          />
+          <h2>Campus Tour</h2>
+        </a>
+
         <a href="transport.html" class="mobile-option">
           <img
             src="images/navbar/Commute.svg"
@@ -65,15 +74,6 @@ const navbarHTML = `
             alt="Student Icon"
           />
           <h2>Student</h2>
-        </a>
-
-        <a href="tour.html" class="mobile-option">
-          <img
-            src="images/navbar/Tour.svg"
-            class="nav-icon"
-            alt="Campus Tour Icon"
-          />
-          <h2>Campus Tour</h2>
         </a>
 
         <a href="laundry.html" class="mobile-option">
