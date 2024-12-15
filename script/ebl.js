@@ -47,17 +47,23 @@ function updateGreeting() {
 
 //   changing content of swap content
 document.addEventListener('DOMContentLoaded', () => {
-    const allLinks = document.querySelectorAll('#right-header a');
+    const rightHeader = document.getElementById('right-header');
+    const swapContent = document.getElementById('swap-content');
+
+    if (!rightHeader || !swapContent) {
+        return; 
+    }
+
+    const allLinks = rightHeader.querySelectorAll('a'); 
     const mobileLinks = document.querySelectorAll('.mobile-links a');
     const desktopLinks = document.querySelectorAll('.desktop-links a');
-    const content = document.getElementById('swap-content');
+    const content = swapContent; 
 
     function loadContent(href) {
         switch (href) {
             case "#not":
                 content.innerHTML = `
                 <div id="notification">
-
                     <h1>Notifications</h1>
                     <div>
                         <table class="notification-panel">
@@ -80,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             </tbody>
                         </table>
                     </div>
-                
                 </div>`;
                 break;
             case "#lob":
@@ -110,12 +115,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setActive(links, hash) {
-      links.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === hash) {
-          link.classList.add('active');
-        }
-      });
+        links.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === hash) {
+                link.classList.add('active');
+            }
+        });
     }
 
     function handleClick(event) {
@@ -130,29 +135,29 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', handleClick);
     });
 
-    // set defualt to notifications
-    const currentHash = window.location.hash || "#not"; // Use hash or default
+    const currentHash = window.location.hash || "#not";
     loadContent(currentHash);
     setActive(allLinks, currentHash);
 
-
     //Mobile Icon Active State
     const mobileIcons = document.querySelectorAll(".mobile-icon");
+
     function setActiveMobileIcon(hash) {
         mobileIcons.forEach(icon => {
-            const baseSrc = icon.src.replace("-filled.svg", ".svg"); // Get the base src
-            icon.src = baseSrc; // Set it to the base src (unfilled)
+            const baseSrc = icon.src.replace("-filled.svg", ".svg");
+            icon.src = baseSrc;
 
             if (icon.parentNode.getAttribute("href") === hash) {
-                icon.src = baseSrc.replace(".svg", "-filled.svg"); // Set to filled if active
+                icon.src = baseSrc.replace(".svg", "-filled.svg");
             }
         });
     }
 
     setActiveMobileIcon(currentHash);
-    mobileLinks.forEach(link =>{
-        link.addEventListener("click", ()=>{
+
+    mobileLinks.forEach(link => {
+        link.addEventListener("click", () => {
             setActiveMobileIcon(link.getAttribute("href"));
-        })
-    })
+        });
+    });
 });
