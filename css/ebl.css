@@ -12,7 +12,7 @@ body {
   align-items: center;
 
   text-align: center;
-  background-image: url("images/ebl/banner.png");
+  background-image: url("../images/ebl/banner.png");
 
   background-size: cover;
   background-position: center;
@@ -648,7 +648,7 @@ body {
   }
 
   .mobile-icon.active {
-    content: url("images/tour/subsection-dark.svg");
+    content: url("../images/tour/subsection-dark.svg");
   }
 
   #notification h1 {

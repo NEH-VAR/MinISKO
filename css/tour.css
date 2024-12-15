@@ -77,7 +77,7 @@ html {
       rgba(0, 0, 0, 0) 60%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("/images/tour/Tour.png");
+    url("../images/tour/Tour.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
