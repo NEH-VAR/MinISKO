@@ -164,7 +164,7 @@ html {
   transform: translateY(-50%);
   align-self: flex-start;
 
-  z-index: 12;
+  z-index: 5;
 }
 
 #sections img {
@@ -337,9 +337,10 @@ html {
     gap: 0px;
   }
 
-  #sections,
-  #identifier {
-    display: none;
+  #sections img,
+  #identifier img {
+    min-width: 25px;
+    width: 25px;
   }
 
   #info-container {
