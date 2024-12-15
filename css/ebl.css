@@ -125,7 +125,7 @@ body {
   overflow: hidden;
 
   z-index: -1;
-  background-color: red;
+  background-color: var(--grey4);
 }
 
 .img-login {
@@ -134,7 +134,7 @@ body {
   max-width: 100%;
   min-width: 100%;
 
-  background-color: rebeccapurple;
+  background-color: var(--grey3);
 }
 
 .img-login img {
