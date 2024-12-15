@@ -41,12 +41,11 @@ function updateGreeting() {
     }
   }
   
-  // Call the function initially to set the content
   updateGreeting();
   
-  // Update the content every minute (or less often if desired)
-  setInterval(updateGreeting, 60000); // 60000 milliseconds = 1 minute
+  setInterval(updateGreeting, 60000);  
 
+//   changing content of swap content
 document.addEventListener('DOMContentLoaded', () => {
     const allLinks = document.querySelectorAll('#right-header a');
     const mobileLinks = document.querySelectorAll('.mobile-links a');
@@ -131,10 +130,11 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', handleClick);
     });
 
-    // Initial load and active state
+    // set defualt to notifications
     const currentHash = window.location.hash || "#not"; // Use hash or default
     loadContent(currentHash);
     setActive(allLinks, currentHash);
+
 
     //Mobile Icon Active State
     const mobileIcons = document.querySelectorAll(".mobile-icon");

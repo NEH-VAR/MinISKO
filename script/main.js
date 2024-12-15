@@ -32,7 +32,7 @@ const navbarHTML = `
 
     <!-- Start Navigation Bar Mobile -->
     <nav id="nav-mobile">
-      <img src="/images/navbar/menu-dark.svg" id="nav-burger" alt="Menu Icon" />
+      <img src="images/navbar/menu-dark.svg" id="nav-burger" alt="Menu Icon" />
       <div>
         <span style="color:var(--red1);">Min</span><span style="color: var(--yellow1);;">IS</span
         ><span style="color: var(--green1);">KO</span>
@@ -42,11 +42,13 @@ const navbarHTML = `
 
     <!-- Start of Nav Sidebar -->
     <div id="nav-sidebar">
-      <img
-        src="images/icon.ico"
-        id="nav-up"
-        alt="UP Seal"
-      />
+      <a href="index.html">
+        <img
+          src="images/icon.ico"
+          id="nav-up"
+          alt="UP Seal"
+        />
+      </a>
 
       <div id="mobile-options">
         <a href="tour.html" class="mobile-option">
