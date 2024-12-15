@@ -12,6 +12,7 @@ body {
   align-items: center;
 
   text-align: center;
+  background-color: var(--grey3);
   background-image: url("../images/ebl/banner.png");
 
   background-size: cover;
@@ -25,7 +26,16 @@ body {
 }
 
 .greetings {
-  padding: 4%;
+  padding: 30px;
+}
+
+.greetings p{
+  font-size: 24px;
+  font-weight: var(--Medium);
+}
+
+.greetings h1{
+  font-size: 64px;
 }
 
 .bottom-container {
@@ -581,6 +591,10 @@ body {
     padding: 32px 0px;
 
     margin-top: 50px;
+  }
+
+  .greetings h1{
+    font-size: 40px;
   }
 
   .bottom-container {
