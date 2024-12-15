@@ -96,10 +96,6 @@ html {
 
 /* End Banner CSS */
 
-#sections {
-  z-index: 12;
-}
-
 /* Start Content CSS*/
 
 #content {
@@ -151,8 +147,6 @@ html {
   margin-bottom: 50px;
 }
 
-/* Section */
-
 #sections {
   display: flex;
   flex-direction: column;
@@ -168,7 +162,9 @@ html {
   top: 50%;
 
   transform: translateY(-50%);
-  align-self: flex-start; /* Add this */
+  align-self: flex-start;
+
+  z-index: 12;
 }
 
 #sections img {
@@ -276,9 +272,7 @@ html {
   position: sticky;
   top: 50%;
   transform: translateY(-50%);
-  align-self: flex-start; 
-
-  
+  align-self: flex-start;
 }
 
 #identifier img {
