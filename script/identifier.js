@@ -1,4 +1,3 @@
-// script.js
 const identifier = document.getElementById('identifier');
 const sections = {
   acad: { count: 2, prefix: 'acad' },
